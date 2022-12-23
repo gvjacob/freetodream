@@ -35,12 +35,12 @@ function Image({ image }) {
 
 function URL() {
   const siteURL = process.env.NEXT_PUBLIC_SITE_URL;
+  const { asPath } = useRouter();
 
   if (!siteURL) {
     return null;
   }
 
-  const { asPath } = useRouter();
   const url = `${siteURL}${asPath}`;
 
   return (
