@@ -38,10 +38,10 @@ export default function Navigation() {
 
   return (
     <header className="flex items-center px-8 py-4 bg-blue">
-      <nav className="flex justify-between items-center w-full mr-6">
+      <nav className="flex justify-between items-center w-full mr-10">
         <SVG.HanvoiceLogo className="w-8" />
 
-        <ul className="flex space-x-6">
+        <ul className="flex space-x-10">
           <li>
             <NavigationLink href="/about">{lt('navigation.about-hanvoice')}</NavigationLink>
           </li>

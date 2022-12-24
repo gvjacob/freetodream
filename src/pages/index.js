@@ -6,7 +6,7 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Meta title="Hanvoice" />
+      <Meta title="Home | Hanvoice" />
 
       <h1 className="text-6xl font-bold">Hanvoice</h1>
       <p>{lt('navigation.about-hanvoice')}</p>
