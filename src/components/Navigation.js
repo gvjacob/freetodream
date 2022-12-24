@@ -1,18 +1,26 @@
-import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-import useLocaleTranslation from '@utils/i18n';
+import { useLocaleTranslation, useLocaleSwitch } from '@utils/i18n';
+
+function LocaleSwitch() {
+  const router = useRouter();
+  const lt = useLocaleTranslation();
+  const localeSwitch = useLocaleSwitch();
+
+  return (
+    <button
+      onClick={() => localeSwitch(router.locale === 'en' ? 'ko' : 'en')}
+    >
+      {lt('navigation.locale-switch')}
+    </button >
+  );
+}
 
 export default function Navigation() {
-  const lt = useLocaleTranslation();
-
   return (
     <header>
       <nav>
-        <ul>
-          <li>
-            <Link href="/about">{lt('navigation.about-hanvoice')}</Link>
-          </li>
-        </ul>
+        <LocaleSwitch />
       </nav>
     </header>
   );

@@ -2,5 +2,9 @@
   "navigation.about-hanvoice": {
     "en": "About Hanvoice",
     "ko": "소개"
+  },
+  "navigation.locale-switch": {
+    "en": "한국어",
+    "ko": "English"
   }
 }

@@ -1,5 +1,5 @@
 import Meta from '@components/Meta';
-import useLocaleTranslation from '@utils/i18n';
+import { useLocaleTranslation } from '@utils/i18n';
 
 export default function Home() {
   const lt = useLocaleTranslation();
