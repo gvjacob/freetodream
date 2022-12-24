@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 import SVG from '@components/SVG';
 import { useLocaleTranslation, useLocaleSwitch } from '@utils/i18n';
@@ -13,8 +14,7 @@ function LocaleSwitch({ className, ...rest }) {
     <button
       className={cn(
         'bg-white py-1 px-2 rounded-sm transition',
-        'hover:bg-blue-dark hover:text-white',
-        'focus:bg-blue-dark focus:text-white',
+        'hocus:bg-blue-dark hocus:text-white',
         className,
       )}
       onClick={() => localeSwitch(router.locale === 'en' ? 'ko' : 'en')}
@@ -25,14 +25,34 @@ function LocaleSwitch({ className, ...rest }) {
   );
 }
 
-export default function Navigation() {
+function NavigationLink({ href, children }) {
   return (
-    <header className="flex items-center px-4 py-4 bg-blue">
-      <nav>
+    <Link className="text-white" href={href}>
+      {children}
+    </Link>
+  );
+}
+
+export default function Navigation() {
+  const lt = useLocaleTranslation();
+
+  return (
+    <header className="flex items-center px-8 py-4 bg-blue">
+      <nav className="flex justify-between items-center w-full mr-6">
         <SVG.HanvoiceLogo className="w-8" />
+
+        <ul className="flex space-x-6">
+          <li>
+            <NavigationLink href="/about">{lt('navigation.about-hanvoice')}</NavigationLink>
+          </li>
+
+          <li>
+            <NavigationLink href="/process">{lt('navigation.process')}</NavigationLink>
+          </li>
+        </ul>
       </nav>
 
-      <LocaleSwitch />
+      <LocaleSwitch className="shrink-0" />
     </header>
   );
 }

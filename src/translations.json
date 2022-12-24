@@ -3,6 +3,10 @@
     "en": "About Hanvoice",
     "ko": "소개"
   },
+  "navigation.process": {
+    "en": "Process",
+    "ko": "신청과정"
+  },
   "navigation.locale-switch": {
     "en": "한국어",
     "ko": "English"
