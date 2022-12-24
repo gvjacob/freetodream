@@ -18,7 +18,7 @@ function LocaleSwitch() {
 
 export default function Navigation() {
   return (
-    <header>
+    <header className="bg-blue">
       <nav>
         <LocaleSwitch />
       </nav>
