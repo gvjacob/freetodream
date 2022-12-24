@@ -10,19 +10,6 @@ export default function Home() {
   return (
     <div>
       <Meta title="Home | Hanvoice" />
-
-      <header className="flex items-center justify-between mt-20 px-8 space-x-10">
-        <div>
-          <h1 className="text-6xl text-blue mb-8">{lt('home.headline')}</h1>
-          <p className="max-w-xs">{lt('home.introduction')}</p>
-        </div>
-
-        <Image
-          className="rounded-md w-1/2"
-          src={hanvoiceHero}
-          alt="North-Korean father and son sit beside each other."
-        />
-      </header>
     </div>
   );
 }

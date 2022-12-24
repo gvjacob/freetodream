@@ -37,11 +37,17 @@ export default function Navigation() {
   const lt = useLocaleTranslation();
 
   return (
-    <header className="flex items-center px-8 py-4 bg-blue">
-      <nav className="flex justify-between items-center w-full mr-10">
-        <SVG.HanvoiceLogo className="w-8" />
+    <header className="flex items-center max-sm:justify-center px-4 py-2 sm:px-8 sm:py-4 bg-blue">
+      <div className="shrink-0 max-sm:flex-1 sm:order-1 ">
+        <LocaleSwitch />
+      </div>
 
-        <ul className="flex space-x-10">
+      <nav className="flex justify-between items-center sm:w-full sm:mr-10">
+        <Link href="/">
+          <SVG.HanvoiceLogo className="max-sm:w-6 w-8" aria-hidden />
+        </Link>
+
+        <ul className="max-sm:hidden flex space-x-10">
           <li>
             <NavigationLink href="/about">{lt('navigation.about-hanvoice')}</NavigationLink>
           </li>
@@ -52,7 +58,9 @@ export default function Navigation() {
         </ul>
       </nav>
 
-      <LocaleSwitch className="shrink-0" />
+      <div className="max-sm:flex-1 max-sm:flex max-sm:justify-end sm:hidden">
+        <button className="text-white">Menu</button>
+      </div>
     </header>
   );
 }
