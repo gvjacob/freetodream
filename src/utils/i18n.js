@@ -1,6 +1,7 @@
-import { useRouter } from 'next/router';
 import { get } from 'lodash';
-import translations from './translations';
+import { useRouter } from 'next/router';
+
+import translations from '@src/translations';
 
 export default function useLocaleTranslation() {
   const { locale } = useRouter();

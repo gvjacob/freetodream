@@ -8,7 +8,7 @@
     "plugin:jsx-a11y/recommended",
     "eslint:recommended"
   ],
-  "plugins": ["react", "jsx-a11y", "simple-import-sort"],
+  "plugins": ["react", "jsx-a11y"],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "sourceType": "module",
@@ -27,9 +27,6 @@
     "react/prop-types": 0,
     "react/no-unescaped-entities": ["error", { "forbid": [">", "\"", "}"] }],
     "react/react-in-jsx-scope": "off",
-
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
 
     "no-console": ["error", { "allow": ["warn", "error"] }],
 

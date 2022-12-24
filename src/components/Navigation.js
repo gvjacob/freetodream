@@ -1,6 +1,6 @@
-import useLocaleTranslation from 'i18n';
-
 import Link from 'next/link';
+
+import useLocaleTranslation from '@utils/i18n';
 
 export default function Navigation() {
   const lt = useLocaleTranslation();
@@ -10,7 +10,7 @@ export default function Navigation() {
       <nav>
         <ul>
           <li>
-            <Link>{lt('navigation.about-hanvoice')}</Link>
+            <Link href="/about">{lt('navigation.about-hanvoice')}</Link>
           </li>
         </ul>
       </nav>
