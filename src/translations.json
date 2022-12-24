@@ -5,10 +5,18 @@
   },
   "navigation.process": {
     "en": "Process",
-    "ko": "신청과정"
+    "ko": "신청 과정"
   },
   "navigation.locale-switch": {
     "en": "한국어",
     "ko": "English"
+  },
+  "home.headline": {
+    "en": "How your family can call Canada home",
+    "ko": "캐나다에 정착하는 방법"
+  },
+  "home.introduction": {
+    "en": "Our new program aims to resettle 5 North Korean refugee families by 2023",
+    "ko": "한보이스의 새로운 프로그램은 2023년까지 탈북민 다섯 가정을 정착시키는 것을 목표로 합니다."
   }
 }
