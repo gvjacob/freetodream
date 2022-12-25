@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
+import * as Dialog from '@radix-ui/react-dialog';
 
 import SVG from '@components/SVG';
-import { useToggle } from '@utils/hooks';
 import { useLocaleTranslation } from '@utils/i18n';
 import MobileMenu from './MobileMenu';
 import LocaleSwitch from './LocalSwitch';
@@ -16,7 +16,6 @@ function NavigationLink({ href, children }) {
 }
 
 export default function Navigation() {
-  const [showMobileMenu, toggleShowMobileMenu] = useToggle();
   const lt = useLocaleTranslation();
 
   return (
@@ -43,13 +42,15 @@ export default function Navigation() {
         </nav>
 
         <div className="max-sm:flex-1 max-sm:flex max-sm:justify-end sm:hidden">
-          <button className="text-white text-sm" onClick={toggleShowMobileMenu}>
-            {showMobileMenu ? lt('navigation.close') : lt('navigation.menu')}
-          </button>
+          <Dialog.Root>
+            <Dialog.Trigger className="text-white text-sm">{lt('navigation.menu')}</Dialog.Trigger>
+
+            <Dialog.Portal>
+              <MobileMenu />
+            </Dialog.Portal>
+          </Dialog.Root>
         </div>
       </header>
-
-      {showMobileMenu && <MobileMenu />}
     </React.Fragment>
   );
 }
