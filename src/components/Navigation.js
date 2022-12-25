@@ -13,7 +13,7 @@ function LocaleSwitch({ className, ...rest }) {
   return (
     <button
       className={cn(
-        'bg-white py-1 px-2 rounded-sm transition',
+        'text-xs sm:text-sm bg-white py-1 px-2 rounded-sm transition',
         'hocus:bg-blue-dark hocus:text-white',
         className,
       )}
@@ -59,7 +59,7 @@ export default function Navigation() {
       </nav>
 
       <div className="max-sm:flex-1 max-sm:flex max-sm:justify-end sm:hidden">
-        <button className="text-white">Menu</button>
+        <button className="text-white text-sm">{lt('navigation.menu')}</button>
       </div>
     </header>
   );

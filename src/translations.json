@@ -1,4 +1,8 @@
 {
+  "navigation.menu": {
+    "en": "Menu",
+    "ko": "메뉴"
+  },
   "navigation.about-hanvoice": {
     "en": "About Hanvoice",
     "ko": "소개"
