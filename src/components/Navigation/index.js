@@ -1,29 +1,8 @@
-import cn from 'classnames';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 import SVG from '@components/SVG';
-import { useLocaleTranslation, useLocaleSwitch } from '@utils/i18n';
-
-function LocaleSwitch({ className, ...rest }) {
-  const router = useRouter();
-  const lt = useLocaleTranslation();
-  const localeSwitch = useLocaleSwitch();
-
-  return (
-    <button
-      className={cn(
-        'text-xs sm:text-sm bg-white py-1 px-2 rounded-sm transition',
-        'hocus:bg-blue-dark hocus:text-white',
-        className,
-      )}
-      onClick={() => localeSwitch(router.locale === 'en' ? 'ko' : 'en')}
-      {...rest}
-    >
-      {lt('navigation.locale-switch')}
-    </button>
-  );
-}
+import { useLocaleTranslation } from '@utils/i18n';
+import LocaleSwitch from './LocalSwitch';
 
 function NavigationLink({ href, children }) {
   return (
