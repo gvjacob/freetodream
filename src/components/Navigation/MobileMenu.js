@@ -10,9 +10,9 @@ export default function MobileMenu() {
 
   return (
     <Dialog.Content className="absolute top-0 left-0 w-screen h-screen bg-blue flex flex-col justify-between">
-      <header className="flex items-center max-sm:justify-center px-4 py-2 sm:px-8 sm:py-4">
-        <Dialog.Title className="sr-only">Menu</Dialog.Title>
+      <Dialog.Title className="sr-only">Menu</Dialog.Title>
 
+      <header className="flex items-center max-sm:justify-center px-4 py-2 sm:px-8 sm:py-4">
         <div className="shrink-0 max-sm:flex-1 sm:order-1 ">
           <LocaleSwitch />
         </div>
