@@ -3,6 +3,10 @@
     "en": "Menu",
     "ko": "메뉴"
   },
+  "navigation.close": {
+    "en": "Close",
+    "ko": "닫다"
+  },
   "navigation.about-hanvoice": {
     "en": "About Hanvoice",
     "ko": "소개"
