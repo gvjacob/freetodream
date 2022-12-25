@@ -12,18 +12,18 @@ export default function MobileMenu() {
     <Dialog.Content className="absolute top-0 left-0 w-screen h-screen bg-blue flex flex-col justify-between">
       <Dialog.Title className="sr-only">Menu</Dialog.Title>
 
-      <header className="flex items-center max-sm:justify-center px-4 py-2 sm:px-8 sm:py-4">
-        <div className="shrink-0 max-sm:flex-1 sm:order-1 ">
+      <header className="flex items-center justify-center px-4 py-2">
+        <div className="flex-1 flex justify-end order-1">
+          <Dialog.Close className="text-white text-sm">{lt('navigation.close')}</Dialog.Close>
+        </div>
+
+        <div className="shrink-0 flex-1">
           <LocaleSwitch />
         </div>
 
         <Link href="/">
-          <SVG.HanvoiceLogo className="max-sm:w-6 w-8" aria-hidden />
+          <SVG.HanvoiceLogo className="w-6" aria-hidden />
         </Link>
-
-        <div className="max-sm:flex-1 max-sm:flex max-sm:justify-end sm:hidden">
-          <Dialog.Close className="text-white text-sm">{lt('navigation.close')}</Dialog.Close>
-        </div>
       </header>
 
       <ul className="px-4 pb-8">
