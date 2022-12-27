@@ -12,7 +12,7 @@ export default function MobileMenu() {
     <Dialog.Content className="absolute top-0 left-0 w-screen h-screen bg-blue flex flex-col justify-between">
       <Dialog.Title className="sr-only">Menu</Dialog.Title>
 
-      <header className="flex items-center justify-center px-4 py-2">
+      <header className="hv-site-padding flex items-center justify-center py-2">
         <div className="flex-1 flex justify-end order-1">
           <Dialog.Close className="text-white text-sm">{lt('navigation.close')}</Dialog.Close>
         </div>
@@ -26,7 +26,7 @@ export default function MobileMenu() {
         </Link>
       </header>
 
-      <ul className="px-4 pb-8">
+      <ul className="hv-site-padding pb-8">
         <li>
           <Link
             className="block text-white text-4xl py-4 border-b-[1px] border-white"

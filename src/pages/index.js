@@ -12,8 +12,8 @@ function Topper() {
   return (
     <header
       className={cn(
-        'flex flex-col-reverse px-4 mt-4',
-        'sm:flex-row sm:items-center sm:justify-between sm:mt-20 sm:px-8 sm:space-x-10',
+        'hv-site-padding flex flex-col-reverse mt-4',
+        'sm:flex-row sm:items-center sm:justify-between sm:mt-20 sm:space-x-10',
       )}
     >
       <div>
