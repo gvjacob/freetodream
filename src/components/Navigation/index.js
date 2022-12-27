@@ -27,6 +27,7 @@ export default function Navigation() {
 
         <nav className="flex justify-between items-center sm:w-full sm:mr-10">
           <Link href="/">
+            <span className="sr-only">{lt('navigation.home')}</span>
             <SVG.HanvoiceLogo className="max-sm:w-6 w-8" aria-hidden />
           </Link>
 

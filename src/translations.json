@@ -1,4 +1,8 @@
 {
+  "navigation.home": {
+    "en": "Home",
+    "ko": "집"
+  },
   "navigation.menu": {
     "en": "Menu",
     "ko": "메뉴"
