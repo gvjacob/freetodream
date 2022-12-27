@@ -31,11 +31,11 @@ function Topper() {
 
         <div className="flex mt-8 space-x-4">
           <RoundCTA className="text-sm w-1/2 sm:w-32" href="/apply">
-            Apply
+            {lt('home.apply')}
           </RoundCTA>
 
           <RoundCTA className="text-sm w-1/2 sm:w-32" href="/process">
-            Learn More
+            {lt('home.learn-more')}
           </RoundCTA>
         </div>
       </div>
