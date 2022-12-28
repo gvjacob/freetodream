@@ -6,21 +6,24 @@ export default function Footer() {
   const lt = useLocaleTranslation();
 
   return (
-    <footer className="hv-site-padding bg-white">
-      <ul>
-        <li>
-          <Link href="/about">{lt('navigation.about-hanvoice')}</Link>
-        </li>
-        <li>
-          <Link href="/process">{lt('navigation.process')}</Link>
-        </li>
-      </ul>
+    <footer className="hv-site-padding py-10 bg-white mt-10">
+      <div className="grid max-sm:grid-rows-2 max-sm:gap-10 sm:grid-cols-2 sm:gap-2">
+        <div>
+          <SVG.CanadaWordmark className="w-32" aria-hidden />
+          <p className="mt-4 max-w-sm">{lt('footer.program-credits')}</p>
+        </div>
 
-      <SVG.CanadaWordmark aria-hidden />
+        <ul className="space-y-2">
+          <li>
+            <Link href="/about">{lt('navigation.about-hanvoice')}</Link>
+          </li>
+          <li>
+            <Link href="/process">{lt('navigation.process')}</Link>
+          </li>
+        </ul>
+      </div>
 
-      <p>{lt('footer.program-credits')}</p>
-
-      <p>© 2022 HanVoice.ca</p>
+      <p className="mt-10">© 2022 HanVoice.ca</p>
     </footer>
   );
 }
