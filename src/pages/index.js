@@ -54,10 +54,10 @@ function ProgramCard() {
 
   return (
     <section className="hv-site-padding mt-14 sm:mt-20">
-      <div className="bg-blue rounded-md p-4 sm:p-8">
+      <div className="bg-blue rounded-md p-6 sm:p-10">
         <h2 className="text-white text-3xl sm:text-4xl mb-4">{lt('home.the-program')}</h2>
 
-        <p className="text-white">{lt('home.program-description')}</p>
+        <p className="text-white max-w-2xl">{lt('home.program-description')}</p>
       </div>
     </section>
   );
