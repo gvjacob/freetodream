@@ -30,7 +30,7 @@ function Topper() {
         <p className="max-w-xs">{lt('home.introduction')}</p>
 
         <div className="flex mt-8 space-x-4">
-          <RoundCTA className="text-sm w-1/2 sm:w-32" href="/apply">
+          <RoundCTA className="text-sm w-1/2 sm:w-32" href="/apply" variant="primary">
             {lt('home.apply')}
           </RoundCTA>
 
@@ -54,7 +54,7 @@ function ProgramCard() {
 
   return (
     <section className="hv-site-padding mt-14 sm:mt-20">
-      <div className="bg-blue rounded-md p-6 sm:p-10">
+      <div className="bg-blue-light rounded-md p-6 sm:p-10">
         <h2 className="text-white text-3xl sm:text-4xl mb-4">{lt('home.the-program')}</h2>
 
         <p className="text-white max-w-2xl">{lt('home.program-description')}</p>
