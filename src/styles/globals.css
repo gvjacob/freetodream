@@ -12,3 +12,13 @@ body {
     @apply sm:px-8;
   }
 }
+
+@layer components {
+  .hv-article-body h2 {
+    @apply text-2xl sm:text-3xl font-bold;
+  }
+
+  .hv-article-body > * + * {
+    margin-block-start: 1rem;
+  }
+}

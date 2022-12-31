@@ -17,7 +17,8 @@ export default function ArticleLayout({ title, children }) {
       <div className={cn('grid grid-cols-12 gap-4')}>
         <div
           className={cn(
-            'col-start-1 col-end-12',
+            'hv-article-body',
+            'col-start-1 col-span-full',
             'sm:col-start-1 sm:col-end-10',
             'md:col-start-2 md:col-end-8',
           )}
