@@ -5,6 +5,7 @@ export default function ArticleLayout({ title, children }) {
   return (
     <article className="hv-site-padding">
       <Meta title={`${title} | Hanvoice`} />
+
       <header className="grid grid-cols-12 gap-4 mt-24 mb-8">
         <h1
           className={cn(

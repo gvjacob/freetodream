@@ -18,6 +18,10 @@ body {
     @apply text-2xl sm:text-3xl font-semibold;
   }
 
+  .hv-article-body strong {
+    @apply font-semibold;
+  }
+
   .hv-article-body > * + * {
     margin-block-start: 1rem;
   }
