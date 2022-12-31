@@ -18,6 +18,10 @@ body {
     @apply text-2xl sm:text-3xl font-semibold;
   }
 
+  .hv-article-body h2:not(:first-child) {
+    @apply mt-8;
+  }
+
   .hv-article-body strong {
     @apply font-semibold;
   }
