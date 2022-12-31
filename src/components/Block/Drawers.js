@@ -3,8 +3,8 @@ import * as Accordion from '@radix-ui/react-accordion';
 
 export default function Drawers({ title, items }) {
   return (
-    <section>
-      <h3 className="mb-2">{title}</h3>
+    <section className="py-2">
+      <h3 className="mb-2 text-xs uppercase">{title}</h3>
 
       <Accordion.Root type="multiple">
         {items.map(({ header, content }, i) => (
@@ -23,7 +23,7 @@ export default function Drawers({ title, items }) {
               />
             </Accordion.Header>
 
-            <Accordion.Content className="py-2">{content}</Accordion.Content>
+            <Accordion.Content className="py-2 mb-4">{content}</Accordion.Content>
           </Accordion.Item>
         ))}
       </Accordion.Root>
