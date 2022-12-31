@@ -15,7 +15,7 @@ body {
 
 @layer components {
   .hv-article-body h2 {
-    @apply text-2xl sm:text-3xl font-bold;
+    @apply text-2xl sm:text-3xl font-semibold;
   }
 
   .hv-article-body > * + * {
