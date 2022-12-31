@@ -1,18 +1,29 @@
+import cn from 'classnames';
 import * as Accordion from '@radix-ui/react-accordion';
 
 export default function Drawers({ title, items }) {
   return (
     <section>
-      <h2>{title}</h2>
+      <h3 className="mb-2">{title}</h3>
 
       <Accordion.Root type="multiple">
         {items.map(({ header, content }, i) => (
-          <Accordion.Item value={`item-${i}`} key={i}>
-            <Accordion.Header>
-              <Accordion.Trigger>{header}</Accordion.Trigger>
+          <Accordion.Item className="border-t-[1px] border-black py-2" value={`item-${i}`} key={i}>
+            <Accordion.Header className="flex justify-between items-center group">
+              <Accordion.Trigger className="font-semibold">{header}</Accordion.Trigger>
+
+              <div
+                className={cn(
+                  'relative w-3 aspect-square',
+                  'before:absolute before:top-1/2 before:w-full before:border-b-[2px] before:border-black',
+                  'after:absolute after:top-1/2 after:w-full after:border-b-[2px] after:border-black after:rotate-90',
+                  'after:transition-transform group-[[data-state="open"]]:after:rotate-0',
+                )}
+                aria-hidden
+              />
             </Accordion.Header>
 
-            <Accordion.Content>{content}</Accordion.Content>
+            <Accordion.Content className="py-2">{content}</Accordion.Content>
           </Accordion.Item>
         ))}
       </Accordion.Root>
