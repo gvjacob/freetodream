@@ -4,7 +4,7 @@ import * as Accordion from '@radix-ui/react-accordion';
 export default function Drawers({ title, items }) {
   return (
     <section className="py-2">
-      <h3 className="mb-2 text-xs uppercase">{title}</h3>
+      {title && <h3 className="mb-2 text-xs uppercase">{title}</h3>}
 
       <Accordion.Root type="single" collapsible>
         {items.map(({ header, content }, i) => (
