@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import Meta from '@components/Meta';
+import ArticleNavigation from '@components/ArticleNavigation';
 
 export default function ArticleLayout({ title, children }) {
   return (
@@ -17,7 +18,9 @@ export default function ArticleLayout({ title, children }) {
         </h1>
       </header>
 
-      <div className={cn('grid grid-cols-12 gap-4')}>
+      <div className={cn('grid grid-cols-12 grid-rows-1 gap-4')}>
+        <ArticleNavigation className="sm:col-start-11 md:col-start-9 md:row-start-1 col-span-full" />
+
         <div
           className={cn(
             'hv-article-body',
