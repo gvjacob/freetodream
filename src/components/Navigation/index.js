@@ -51,10 +51,7 @@ export default function Navigation() {
         <div className="max-sm:flex-1 max-sm:flex max-sm:justify-end sm:hidden">
           <Dialog.Root>
             <Dialog.Trigger className="text-white text-sm">{lt('navigation.menu')}</Dialog.Trigger>
-
-            <Dialog.Portal>
-              <MobileMenu />
-            </Dialog.Portal>
+            <MobileMenu />
           </Dialog.Root>
         </div>
       </header>
