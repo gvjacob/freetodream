@@ -10,7 +10,9 @@ export default function Drawers({ title, items }) {
         {items.map(({ header, content }, i) => (
           <Accordion.Item className="border-t-[1px] border-black py-2" value={`item-${i}`} key={i}>
             <Accordion.Header className="flex justify-between items-start group">
-              <Accordion.Trigger className="font-semibold text-left">{header}</Accordion.Trigger>
+              <Accordion.Trigger className="font-semibold text-left transition-colors hocus:text-gray-500">
+                {header}
+              </Accordion.Trigger>
 
               <div
                 className={cn(
