@@ -8,8 +8,8 @@ export default function RoundCTA({ className, children, variant = 'secondary', .
         'flex items-center justify-center',
         'rounded-full aspect-square',
         'border-blue border-[1px]',
-        variant === 'secondary' && 'transition hocus:text-white hocus:bg-blue-dark',
-        variant === 'primary' && 'bg-blue text-white transition hocus:bg-blue-dark',
+        variant === 'secondary' && 'transition hocus:text-white hocus:bg-blue-900',
+        variant === 'primary' && 'bg-blue text-white transition hocus:bg-blue-900',
         className,
       )}
       {...rest}

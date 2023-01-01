@@ -12,7 +12,7 @@ export default function LocaleSwitch({ className, ...rest }) {
     <button
       className={cn(
         'text-xs sm:text-sm bg-white py-1 px-2 rounded-sm transition',
-        'hocus:bg-blue-dark hocus:text-white',
+        'hocus:bg-blue-900 hocus:text-white',
         className,
       )}
       onClick={() => localeSwitch(router.locale === 'en' ? 'ko' : 'en')}
