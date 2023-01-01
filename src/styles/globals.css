@@ -9,7 +9,7 @@ body {
 @layer utilities {
   .hv-site-padding {
     @apply px-4;
-    @apply sm:px-8;
+    @apply md:px-8;
   }
 }
 
