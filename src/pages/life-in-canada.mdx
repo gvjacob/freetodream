@@ -1,0 +1,32 @@
+import ArticleLayout from '@components/ArticleLayout';
+import * as Block from '@components/Block';
+
+<h2 id="family-support">Supporting your family for a year after arrival.</h2>
+
+Sponsors will provide your family with care, lodging, settlement assistance, financial assistance, and support during the sponsorship period. Usually, this is 12 months starting from arrival in Canada or until you become self-sufficient, whichever comes first.
+
+Private sponsors will support your family by:
+
+- providing the cost of food, rent and home utilities and other living expenses;
+- providing clothing, furniture and other everyday goods;
+- locating interpreters;
+- selecting a family physician and dentist;
+- assisting with applying for provincial health-care coverage;
+- enrolling children in school and adults in language training;
+- introducing newcomers to people with similar personal interests;
+- providing orientation on everyday activities such as banking services, transportation; and
+- helping in the search for employment.
+
+export default ({ children }) => (
+  <ArticleLayout
+    title="Life in Canada"
+    navigation={[
+      {
+        id: '#family-support',
+        title: 'Family Support',
+      },
+    ]}
+  >
+    {children}
+  </ArticleLayout>
+);
