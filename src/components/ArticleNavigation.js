@@ -1,11 +1,12 @@
 import cn from 'classnames';
 
-function NavigationLink({ href, children, isActive }) {
+function NavigationLink({ href, children }) {
   return (
     <a
       className={cn(
-        'block py-1 pl-4 transition-[border]',
-        isActive ? 'border-l-[4px] border-black' : 'border-l-[1px] border-gray-500',
+        'block py-1 pl-4 transition-all text-gray-500',
+        'border-l-[1px] border-gray-500',
+        'hocus:text-black hocus:border-l-[4px] hocus:border-black',
       )}
       href={href}
     >
@@ -14,22 +15,17 @@ function NavigationLink({ href, children, isActive }) {
   );
 }
 
-export default function ArticleNavigation({ className }) {
+export default function ArticleNavigation({ className, items }) {
   return (
     <nav className={className} aria-label="Article navigation">
       <h2 className="font-semibold mb-2">Jump To</h2>
 
       <ul>
-        <li>
-          <NavigationLink href="#overview" isActive>
-            Overview
-          </NavigationLink>
-        </li>
-        <li>
-          <NavigationLink href="#frequently-asked-questions">
-            Frequently Asked Questions
-          </NavigationLink>
-        </li>
+        {items.map(({ title, id }) => (
+          <li key={id}>
+            <NavigationLink href={id}>{title}</NavigationLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );

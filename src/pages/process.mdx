@@ -1,7 +1,7 @@
 import ArticleLayout from '@components/ArticleLayout';
 import * as Block from '@components/Block';
 
-## A safe and secure path towards a better future.
+<h2 id="overview">A safe and secure path towards a better future.</h2>
 
 HanVoice is a charity that helps North Korean refugees resettle in Canada. Once you register with HanVoice, **we will securely send your family's information to field partners.** If your family is identified and meet specific conditions, we will contact you to fill out the _refugee application form_.
 
@@ -13,7 +13,7 @@ The main applicant must be a North Korean woman, who has been victim, or is at r
 
 In some cases, other family members may be able to apply to come to Canada later under the One Year Window program. This program allows family members who did not travel to Canada with the Principal Applicant to apply to come to Canada within one year of the Principal Applicant arriving.
 
-## Frequently Asked Questions
+<h2 id="faqs">Frequently Asked Questions</h2>
 
 <Block.Drawers
   items={[
@@ -61,5 +61,19 @@ In some cases, other family members may be able to apply to come to Canada later
 />
 
 export default ({ children }) => (
-  <ArticleLayout title="Resettlement Program">{children}</ArticleLayout>
+  <ArticleLayout
+    title="Resettlement Program"
+    navigation={[
+      {
+        id: '#overview',
+        title: 'Overview',
+      },
+      {
+        id: '#faqs',
+        title: 'Frequently Asked Questions',
+      },
+    ]}
+  >
+    {children}
+  </ArticleLayout>
 );

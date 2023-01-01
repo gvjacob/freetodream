@@ -2,7 +2,7 @@ import cn from 'classnames';
 import Meta from '@components/Meta';
 import ArticleNavigation from '@components/ArticleNavigation';
 
-export default function ArticleLayout({ title, children }) {
+export default function ArticleLayout({ title, navigation, children }) {
   return (
     <article className="hv-site-padding">
       <Meta title={`${title} | Hanvoice`} />
@@ -19,7 +19,10 @@ export default function ArticleLayout({ title, children }) {
       </header>
 
       <div className={cn('grid grid-cols-12 grid-rows-1 gap-4')}>
-        <ArticleNavigation className="sm:col-start-11 md:col-start-9 md:row-start-1 col-span-full" />
+        <ArticleNavigation
+          className="sm:col-start-11 md:col-start-9 md:row-start-1 col-span-full"
+          items={navigation}
+        />
 
         <div
           className={cn(
