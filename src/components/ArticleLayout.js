@@ -11,7 +11,7 @@ export default function ArticleLayout({ title, navigation, children }) {
         <h1
           className={cn(
             'col-start-1 col-end-12 text-5xl text-white font-bold',
-            'md:col-start-2 md:col-end-10 md:text-7xl',
+            'md:col-start-2 md:col-end-10 md:text-6xl',
           )}
         >
           {title}
