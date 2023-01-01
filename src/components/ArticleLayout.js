@@ -19,7 +19,7 @@ export default function ArticleLayout({ title, navigation, children }) {
       </header>
 
       <div className={cn('grid grid-cols-12 grid-rows-1 gap-4')}>
-        <div className="h-full sm:col-start-11 md:col-start-9 md:row-start-1 col-span-full">
+        <div className="h-full sm:col-start-11 md:col-start-9 row-start-1 col-span-full">
           <ArticleNavigation className="sticky top-20" items={navigation} />
         </div>
 
