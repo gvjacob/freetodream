@@ -26,6 +26,13 @@ body {
     @apply font-semibold;
   }
 
+  .hv-article-body ul > li {
+    @apply flex my-1;
+    @apply before:w-1.5 before:h-1.5 before:translate-y-[0.6rem];
+    @apply before:bg-black before:rounded-full;
+    @apply before:flex-shrink-0 before:mr-2;
+  }
+
   .hv-article-body > * + * {
     margin-block-start: 1rem;
   }
