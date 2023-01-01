@@ -28,30 +28,21 @@ export default function MobileMenu() {
           </Link>
         </header>
 
-        <ul className="hv-site-padding pb-8">
-          <li>
-            <Link
-              className="block text-white text-4xl py-4 border-b-[1px] border-white"
-              href="/about"
-            >
+        <ul>
+          <li className="hv-site-padding">
+            <Link className="block text-white text-4xl py-4" href="/about">
               {lt('navigation.about-hanvoice')}
             </Link>
           </li>
 
-          <li>
-            <Link
-              className="block text-white text-4xl py-4 border-b-[1px] border-white"
-              href="/process"
-            >
+          <li className="hv-site-padding bg-[#2561F5]">
+            <Link className="block text-white text-4xl py-4" href="/process">
               {lt('navigation.process')}
             </Link>
           </li>
 
-          <li>
-            <Link
-              className="block text-white text-4xl py-4 border-b-[1px] border-white"
-              href="/life-in-canada"
-            >
+          <li className="hv-site-padding bg-[#296AF6]">
+            <Link className="block text-white text-4xl py-4" href="/life-in-canada">
               {lt('navigation.life-in-canada')}
             </Link>
           </li>
