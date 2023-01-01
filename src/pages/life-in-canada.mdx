@@ -1,7 +1,7 @@
 import ArticleLayout from '@components/ArticleLayout';
 import * as Block from '@components/Block';
 
-<h2 id="family-support">Supporting your family for a year after arrival.</h2>
+<h2 id="family">Supporting your family for a year after arrival.</h2>
 
 Sponsors will provide your family with care, lodging, settlement assistance, financial assistance, and support during the sponsorship period. Usually, this is 12 months starting from arrival in Canada or until you become self-sufficient, whichever comes first.
 
@@ -17,13 +17,37 @@ Private sponsors will support your family by:
 - providing orientation on everyday activities such as banking services, transportation; and
 - helping in the search for employment.
 
+<h2 id="financial-support">Financial support your family can rely on.</h2>
+
+Minimum Sponsorship Support
+
+When the 12-month sponsorship period is complete, the sponsored families must be financially independent and the sponsor’s responsibilities end. If they are not self-sufficient at the end of the sponsorship, they can apply for social assistance.
+
+<h2 id="permanent-residency">Becoming permanent residents in Canada</h2>
+
+Your family will become permanent residents the moment they sign their Confirmation of Permanent Residence document at the airport. As a permanent resident, they:
+
+- can access the same social benefits and health care coverage as Canadian citizens;
+- do not require a permit to study or work;
+- are protected under Canadian law and the Canadian Charter of Rights and Freedoms;
+- have responsibilities, including paying taxes and respecting all federal, provincial, and municipal laws; and
+- can apply for Canadian citizenship when eligible.
+
 export default ({ children }) => (
   <ArticleLayout
     title="Life in Canada"
     navigation={[
       {
-        id: '#family-support',
-        title: 'Family Support',
+        id: '#family',
+        title: 'Family',
+      },
+      {
+        id: '#financial-support',
+        title: 'Financial Support',
+      },
+      {
+        id: '#permanent-residency',
+        title: 'Permanent Residency',
       },
     ]}
   >
