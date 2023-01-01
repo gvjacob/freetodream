@@ -20,6 +20,9 @@ export default function Footer() {
           <li>
             <Link href="/process">{lt('navigation.process')}</Link>
           </li>
+          <li>
+            <Link href="/life-in-canada">{lt('navigation.life-in-canada')}</Link>
+          </li>
         </ul>
       </div>
 

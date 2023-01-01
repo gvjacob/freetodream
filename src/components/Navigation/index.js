@@ -39,6 +39,12 @@ export default function Navigation() {
             <li>
               <NavigationLink href="/process">{lt('navigation.process')}</NavigationLink>
             </li>
+
+            <li>
+              <NavigationLink href="/life-in-canada">
+                {lt('navigation.life-in-canada')}
+              </NavigationLink>
+            </li>
           </ul>
         </nav>
 

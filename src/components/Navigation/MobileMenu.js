@@ -44,6 +44,15 @@ export default function MobileMenu() {
             {lt('navigation.process')}
           </Link>
         </li>
+
+        <li>
+          <Link
+            className="block text-white text-4xl py-4 border-b-[1px] border-white"
+            href="/life-in-canada"
+          >
+            {lt('navigation.life-in-canada')}
+          </Link>
+        </li>
       </ul>
     </Dialog.Content>
   );
