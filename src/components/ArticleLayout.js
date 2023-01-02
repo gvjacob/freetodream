@@ -6,7 +6,7 @@ import ArticleNavigation from '@components/ArticleNavigation';
 export default function ArticleLayout({ title, navigation, children }) {
   return (
     <article>
-      <Meta title={`${title} | Hanvoice`} />
+      <Meta title={`${title} — #FreeToDream`} />
 
       <header className="hv-site-padding grid grid-cols-12 gap-4 pt-24 pb-6 bg-blue mb-8">
         <h1

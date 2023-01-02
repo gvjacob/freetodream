@@ -68,7 +68,7 @@ function ProgramCard() {
 export default function Home() {
   return (
     <div>
-      <Meta title="Home | Hanvoice" />
+      <Meta title="Home — #FreeToDream" />
       <Topper />
       <ProgramCard />
     </div>
