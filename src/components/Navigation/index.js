@@ -16,6 +16,7 @@ function NavigationLink({ href, children }) {
 }
 
 export default function Navigation() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const lt = useLocaleTranslation();
 
   return (
@@ -49,9 +50,9 @@ export default function Navigation() {
         </nav>
 
         <div className="max-sm:flex-1 max-sm:flex max-sm:justify-end sm:hidden">
-          <Dialog.Root>
+          <Dialog.Root open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <Dialog.Trigger className="text-white text-sm">{lt('navigation.menu')}</Dialog.Trigger>
-            <MobileMenu />
+            <MobileMenu onClose={() => setIsMobileMenuOpen(false)} />
           </Dialog.Root>
         </div>
       </header>

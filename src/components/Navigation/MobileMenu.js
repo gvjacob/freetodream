@@ -5,7 +5,7 @@ import SVG from '@components/SVG';
 import { useLocaleTranslation } from '@utils/i18n';
 import LocaleSwitch from './LocalSwitch';
 
-export default function MobileMenu() {
+export default function MobileMenu({ onClose }) {
   const lt = useLocaleTranslation();
 
   return (
@@ -30,7 +30,11 @@ export default function MobileMenu() {
 
         <ul>
           <li>
-            <Link className="hv-site-padding block text-white text-4xl py-8" href="/about">
+            <Link
+              className="hv-site-padding block text-white text-4xl py-8"
+              href="/about"
+              onClick={onClose}
+            >
               {lt('navigation.about-hanvoice')}
             </Link>
           </li>
@@ -39,6 +43,7 @@ export default function MobileMenu() {
             <Link
               className="hv-site-padding bg-blue-400 block text-white text-4xl py-8"
               href="/process"
+              onClick={onClose}
             >
               {lt('navigation.process')}
             </Link>
@@ -48,6 +53,7 @@ export default function MobileMenu() {
             <Link
               className="hv-site-padding bg-blue-300 block text-white text-4xl py-8"
               href="/life-in-canada"
+              onClick={onClose}
             >
               {lt('navigation.life-in-canada')}
             </Link>
