@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import * as Dialog from '@radix-ui/react-dialog';
 
-import SVG from '@components/SVG';
 import { useLocaleTranslation } from '@utils/i18n';
-import MobileMenu from './MobileMenu';
+import hanvoiceLogo from '@img/hanvoice-logo.png';
 import LocaleSwitch from './LocalSwitch';
+import MobileMenu from './MobileMenu';
 
 function NavigationLink({ href, children }) {
   return (
@@ -29,7 +30,7 @@ export default function Navigation() {
         <nav className="flex justify-between items-center sm:w-full sm:mr-10">
           <Link href="/">
             <span className="sr-only">{lt('navigation.home')}</span>
-            <SVG.HanvoiceLogo className="max-sm:w-6 w-8" aria-hidden />
+            <Image className="max-sm:w-6 w-8" src={hanvoiceLogo} alt="" />
           </Link>
 
           <ul className="max-sm:hidden flex space-x-10">

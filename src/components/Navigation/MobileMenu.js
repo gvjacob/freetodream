@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import * as Dialog from '@radix-ui/react-dialog';
 
-import SVG from '@components/SVG';
 import { useLocaleTranslation } from '@utils/i18n';
+import hanvoiceLogo from '@img/hanvoice-logo.png';
 import LocaleSwitch from './LocalSwitch';
 
 export default function MobileMenu({ onClose }) {
@@ -24,7 +25,7 @@ export default function MobileMenu({ onClose }) {
           </div>
 
           <Link href="/">
-            <SVG.HanvoiceLogo className="w-6" aria-hidden />
+            <Image className="max-sm:w-6 w-8" src={hanvoiceLogo} alt="" />
           </Link>
         </header>
 
