@@ -15,7 +15,8 @@
     "lodash": "^4.17.21",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
