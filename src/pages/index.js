@@ -66,9 +66,11 @@ function ProgramCard() {
 }
 
 export default function Home() {
+  const lt = useLocaleTranslation();
+
   return (
     <div>
-      <Meta title="Home — #FreeToDream" />
+      <Meta title={`${lt('navigation.home')} — #FreeToDream`} />
       <Topper />
       <ProgramCard />
     </div>

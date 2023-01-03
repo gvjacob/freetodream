@@ -2,11 +2,14 @@ import cn from 'classnames';
 
 import Meta from '@components/Meta';
 import ArticleNavigation from '@components/ArticleNavigation';
+import { useLocaleTranslation } from '@utils/i18n';
 
 export default function ArticleLayout({ title, navigation, children }) {
+  const lt = useLocaleTranslation();
+
   return (
     <article>
-      <Meta title={`${title} — #FreeToDream`} />
+      <Meta title={`${lt(title)} — #FreeToDream`} />
 
       <header className="hv-site-padding grid grid-cols-12 gap-4 pt-24 pb-6 bg-blue mb-8">
         <h1
@@ -15,7 +18,7 @@ export default function ArticleLayout({ title, navigation, children }) {
             'md:col-start-2 md:col-end-10 md:text-6xl',
           )}
         >
-          {title}
+          {lt(title)}
         </h1>
       </header>
 
