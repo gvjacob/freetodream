@@ -9,8 +9,8 @@ export default function HealthcareCoverageTable() {
       </thead>
       <tbody>
         <tr>
-          <td>Medical Services</td>
-          <td>Limited Vision Care</td>
+          <th scope="col">Medical Services</th>
+          <th scope="col">Limited Vision Care</th>
         </tr>
         <tr>
           <td>Doctor visits</td>
@@ -22,31 +22,35 @@ export default function HealthcareCoverageTable() {
         </tr>
         <tr>
           <td>Prenatal and obstetrical care</td>
-          <td>Urgent Dental Care</td>
+          <td></td>
         </tr>
         <tr>
           <td>Lab tests &amp; x-rays</td>
+          <th scope="col">Urgent Dental Care</th>
+        </tr>
+        <tr>
+          <td></td>
           <td>Emergency dental exams &amp; x-rays</td>
         </tr>
         <tr>
-          <td>Hospital Services</td>
+          <th scope="col">Hospital Services</th>
           <td>Extractions &amp; Dentures</td>
         </tr>
         <tr>
           <td>Emergency room visits</td>
-          <td>Mental Health Services</td>
+          <td></td>
         </tr>
         <tr>
           <td>Hospital stays</td>
-          <td>Psychological counselling</td>
+          <th scope="col">Mental Health Services</th>
         </tr>
         <tr>
           <td>Medical &amp; surgical care</td>
-          <td>Assistive devices, medical supplies, and equipment</td>
+          <td>Psychological counselling</td>
         </tr>
         <tr>
           <td>Diagnostic imaging</td>
-          <td></td>
+          <td>Assistive devices, medical supplies, and equipment</td>
         </tr>
       </tbody>
     </table>

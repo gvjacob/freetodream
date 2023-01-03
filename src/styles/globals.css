@@ -56,7 +56,11 @@ body {
     @apply border-l-[1px] border-b-[1px] border-gray-400;
   }
 
-  .hv-article-body table th {
+  .hv-article-body table thead th {
     @apply bg-iron font-semibold;
+  }
+
+  .hv-article-body table tbody th {
+    @apply border-b-2 border-b-black font-semibold;
   }
 }
