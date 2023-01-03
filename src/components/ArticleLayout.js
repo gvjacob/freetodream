@@ -2,6 +2,7 @@ import cn from 'classnames';
 
 import Meta from '@components/Meta';
 import ArticleNavigation from '@components/ArticleNavigation';
+import ArticleActions from '@components/ArticleActions';
 import { useLocaleTranslation } from '@utils/i18n';
 
 export default function ArticleLayout({ title, navigation, children }) {
@@ -24,8 +25,9 @@ export default function ArticleLayout({ title, navigation, children }) {
 
       <div className="hv-site-padding grid grid-cols-12 grid-rows-1 gap-4">
         {navigation && (
-          <div className="h-full sm:col-start-11 md:col-start-9 row-start-1 col-span-full">
-            <ArticleNavigation className="sticky top-20" items={navigation} />
+          <div className="flex flex-col justify-between h-full sm:col-start-11 md:col-start-9 row-start-1 col-span-full">
+            <ArticleNavigation className="sticky top-10" items={navigation} />
+            <ArticleActions className="sticky bottom-4" />
           </div>
         )}
 
