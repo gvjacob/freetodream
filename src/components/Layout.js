@@ -25,7 +25,10 @@ export default function Layout({ children }) {
         />
       </Head>
 
-      <Meta description="" image="https://freetodream.ca/img/hanvoice-og.jpg" />
+      <Meta
+        description="Our new program aims to resettle 5 North Korean refugee families by 2023 and provide them with a safe and secure path towards a better future."
+        image="https://freetodream.ca/img/hanvoice-og.jpg"
+      />
 
       <Navigation />
       <main>{children}</main>
