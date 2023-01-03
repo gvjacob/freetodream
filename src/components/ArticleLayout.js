@@ -26,7 +26,7 @@ export default function ArticleLayout({ title, navigation, children }) {
       <div className="hv-site-padding grid grid-cols-12 grid-rows-1 gap-4">
         <div className="flex flex-col h-full sm:col-start-9 row-start-1 col-span-full">
           {navigation && <ArticleNavigation className="sticky top-10" items={navigation} />}
-          <ArticleActions className="sticky bottom-4 mt-auto" />
+          <ArticleActions className="max-sm:hidden sticky bottom-4 mt-auto" />
         </div>
 
         <div
@@ -39,6 +39,8 @@ export default function ArticleLayout({ title, navigation, children }) {
         >
           {children}
         </div>
+
+        <ArticleActions className="sm:hidden col-span-full mt-10" />
       </div>
     </article>
   );
