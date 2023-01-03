@@ -47,11 +47,16 @@ body {
 
   /* Tables */
   .hv-article-body table {
-    @apply border-[1px] border-gray-300;
+    @apply border-[1px] border-gray-400;
   }
+
   .hv-article-body table th,
   td {
     @apply text-left text-xs sm:text-sm p-2;
-    @apply border-l-[1px] border-b-[1px] border-gray-300;
+    @apply border-l-[1px] border-b-[1px] border-gray-400;
+  }
+
+  .hv-article-body table th {
+    @apply bg-iron font-semibold;
   }
 }
