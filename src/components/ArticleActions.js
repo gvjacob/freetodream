@@ -23,6 +23,7 @@ export default function ArticleActions({ className }) {
             'bg-white rounded-md flex items-center px-3  flex-shrink-0 transition-colors',
             'hocus:bg-blue-900 hocus:text-white hocus:fill-white',
           )}
+          onClick={window.print}
         >
           <SVG.PrintIcon className="w-4 mr-2" aria-hidden />
           <span>Print</span>
