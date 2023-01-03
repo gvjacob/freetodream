@@ -31,7 +31,7 @@ export default function Drawers({ title, items }) {
               </Accordion.Trigger>
             </Accordion.Header>
 
-            <Accordion.Content className="py-2 mb-4">{content}</Accordion.Content>
+            <Accordion.Content className="hv-article-body py-2 mb-4">{content}</Accordion.Content>
           </Accordion.Item>
         ))}
       </Accordion.Root>
