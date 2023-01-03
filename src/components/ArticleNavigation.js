@@ -1,5 +1,7 @@
 import cn from 'classnames';
 
+import { useLocaleTranslation } from '@utils/i18n';
+
 function NavigationLink({ href, children }) {
   return (
     <a
@@ -16,14 +18,16 @@ function NavigationLink({ href, children }) {
 }
 
 export default function ArticleNavigation({ className, items }) {
+  const lt = useLocaleTranslation();
+
   return (
     <nav className={className} aria-label="Article navigation">
-      <h2 className="font-semibold mb-2">Jump To</h2>
+      <h2 className="font-semibold mb-2">{lt('article.navigation-heading')}</h2>
 
       <ul>
         {items.map(({ title, id }) => (
           <li key={id}>
-            <NavigationLink href={id}>{title}</NavigationLink>
+            <NavigationLink href={id}>{lt(title)}</NavigationLink>
           </li>
         ))}
       </ul>
