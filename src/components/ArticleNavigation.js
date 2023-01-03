@@ -4,7 +4,7 @@ function NavigationLink({ href, children }) {
   return (
     <a
       className={cn(
-        'block py-1 pl-4 transition-all text-gray-500',
+        'block py-1 pl-4 transition-all text-gray-500 w-fit',
         'border-l-[1px] border-gray-300',
         'hocus:text-black hocus:border-l-[4px] hocus:border-blue',
       )}

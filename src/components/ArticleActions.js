@@ -10,8 +10,20 @@ export default function ArticleActions({ className }) {
       </p>
 
       <div className="flex justify-between space-x-2">
-        <button className="bg-blue text-white w-full rounded-md font-semibold py-2">Apply</button>
-        <button className="bg-white rounded-md flex items-center px-3  flex-shrink-0">
+        <button
+          className={cn(
+            'bg-blue text-white w-full rounded-md font-semibold py-2 transition-colors',
+            'hocus:bg-blue-900',
+          )}
+        >
+          Apply
+        </button>
+        <button
+          className={cn(
+            'bg-white rounded-md flex items-center px-3  flex-shrink-0 transition-colors',
+            'hocus:bg-blue-900 hocus:text-white hocus:fill-white',
+          )}
+        >
           <SVG.PrintIcon className="w-4 mr-2" aria-hidden />
           <span>Print</span>
         </button>
