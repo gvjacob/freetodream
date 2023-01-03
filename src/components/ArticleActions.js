@@ -7,7 +7,7 @@ export default function ArticleActions({ className }) {
   const lt = useLocaleTranslation();
 
   return (
-    <div className={cn('', className)}>
+    <div className={className}>
       <p className="mb-4 text-sm max-w-[200px] text-gray-500 font-semibold">
         {lt('article.actions-heading')}
       </p>

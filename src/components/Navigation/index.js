@@ -22,7 +22,7 @@ export default function Navigation() {
 
   return (
     <React.Fragment>
-      <header className="hv-site-padding py-2 sm:py-4 flex items-center max-sm:justify-center bg-blue">
+      <header className="print:hidden hv-site-padding py-2 sm:py-4 flex items-center max-sm:justify-center bg-blue">
         <div className="shrink-0 max-sm:flex-1 sm:order-1 ">
           <LocaleSwitch />
         </div>
