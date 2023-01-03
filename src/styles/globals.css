@@ -45,7 +45,7 @@ body {
   /* Tables */
   .hv-article-body table {
     @apply border-[1px] border-gray-400;
-    @apply print:w-full;
+    @apply w-full;
   }
 
   .hv-article-body table th,
