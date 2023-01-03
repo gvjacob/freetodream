@@ -14,7 +14,7 @@ export default function Drawers({ title, items }) {
                 className={cn(
                   'w-full flex justify-between items-start',
                   'font-semibold text-left',
-                  'group transition-colors hocus:text-gray-500',
+                  'group hocus:text-gray-500',
                 )}
               >
                 {header}
