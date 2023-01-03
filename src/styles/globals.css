@@ -5,6 +5,7 @@
 html,
 body {
   @apply h-full w-full;
+  @apply scroll-pt-4;
 }
 
 body {
