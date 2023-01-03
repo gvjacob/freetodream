@@ -25,7 +25,7 @@ export default function ArticleLayout({ title, navigation, children }) {
 
       <div className="hv-site-padding grid grid-cols-12 grid-rows-1 gap-4">
         {navigation && (
-          <div className="flex flex-col justify-between h-full sm:col-start-11 md:col-start-9 row-start-1 col-span-full">
+          <div className="flex flex-col justify-between h-full sm:col-start-9 row-start-1 col-span-full">
             <ArticleNavigation className="sticky top-10" items={navigation} />
             <ArticleActions className="sticky bottom-4" />
           </div>
@@ -35,7 +35,7 @@ export default function ArticleLayout({ title, navigation, children }) {
           className={cn(
             'hv-article-body',
             'col-start-1 col-span-full',
-            'sm:col-start-1 sm:col-end-10',
+            'sm:col-start-1 sm:col-end-8',
             'md:col-start-2 md:col-end-8',
           )}
         >
