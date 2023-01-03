@@ -1,12 +1,15 @@
 import cn from 'classnames';
 
 import SVG from '@components/SVG';
+import { useLocaleTranslation } from '@utils/i18n';
 
 export default function ArticleActions({ className }) {
+  const lt = useLocaleTranslation();
+
   return (
     <div className={cn('', className)}>
       <p className="mb-4 text-sm max-w-[200px] text-gray-500 font-semibold">
-        Secure your path towards a better future now.
+        {lt('article.actions-heading')}
       </p>
 
       <div className="flex justify-between space-x-2">
@@ -16,7 +19,7 @@ export default function ArticleActions({ className }) {
             'hocus:bg-blue-900',
           )}
         >
-          Apply
+          {lt('article.actions-apply')}
         </button>
         <button
           className={cn(
@@ -26,7 +29,7 @@ export default function ArticleActions({ className }) {
           onClick={() => window?.print()}
         >
           <SVG.PrintIcon className="w-4 mr-2" aria-hidden />
-          <span>Print</span>
+          <span>{lt('article.actions-print')}</span>
         </button>
       </div>
     </div>
