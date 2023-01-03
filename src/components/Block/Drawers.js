@@ -8,31 +8,43 @@ export default function Drawers({ title, items }) {
 
       <Accordion.Root type="single" collapsible>
         {items.map(({ header, content }, i) => (
-          <Accordion.Item className="border-t-[1px] border-black py-2" value={`item-${i}`} key={i}>
-            <Accordion.Header>
-              <Accordion.Trigger
-                className={cn(
-                  'w-full flex justify-between items-start',
-                  'font-semibold text-left',
-                  'group hocus:text-gray-500',
-                )}
-              >
-                {header}
+          <>
+            <div className="hidden print:block mb-4" key={i}>
+              <h3 className="font-semibold text-left">{header}</h3>
 
-                <div
+              <div className="hv-article-body">{content}</div>
+            </div>
+
+            <Accordion.Item
+              className="border-t-[1px] border-black py-2 print:hidden"
+              value={`item-${i}`}
+              key={i}
+            >
+              <Accordion.Header>
+                <Accordion.Trigger
                   className={cn(
-                    'relative w-3 aspect-square mt-1.5 flex-shrink-0 ml-1',
-                    'before:absolute before:top-1/2 before:w-full before:border-b-[2px] before:border-black',
-                    'after:absolute after:top-1/2 after:w-full after:border-b-[2px] after:border-black after:rotate-90',
-                    'after:transition-transform group-[[data-state="open"]]:after:rotate-0',
+                    'w-full flex justify-between items-start',
+                    'font-semibold text-left',
+                    'group hocus:text-gray-500',
                   )}
-                  aria-hidden
-                />
-              </Accordion.Trigger>
-            </Accordion.Header>
+                >
+                  {header}
 
-            <Accordion.Content className="hv-article-body py-2 mb-4">{content}</Accordion.Content>
-          </Accordion.Item>
+                  <div
+                    className={cn(
+                      'relative w-3 aspect-square mt-1.5 flex-shrink-0 ml-1',
+                      'before:absolute before:top-1/2 before:w-full before:border-b-[2px] before:border-black',
+                      'after:absolute after:top-1/2 after:w-full after:border-b-[2px] after:border-black after:rotate-90',
+                      'after:transition-transform group-[[data-state="open"]]:after:rotate-0',
+                    )}
+                    aria-hidden
+                  />
+                </Accordion.Trigger>
+              </Accordion.Header>
+
+              <Accordion.Content className="hv-article-body py-2 mb-4">{content}</Accordion.Content>
+            </Accordion.Item>
+          </>
         ))}
       </Accordion.Root>
     </section>
