@@ -6,7 +6,7 @@ export default function Footer() {
   const lt = useLocaleTranslation();
 
   return (
-    <footer className="hv-site-padding py-10 bg-white mt-10">
+    <footer className="hv-site-padding py-10 bg-white mt-10 print:mt-0">
       <div className="grid max-sm:grid-rows-2 max-sm:gap-10 sm:grid-cols-2 sm:gap-2 print:flex print:flex-col">
         <div>
           <SVG.CanadaWordmark className="w-32" aria-hidden />

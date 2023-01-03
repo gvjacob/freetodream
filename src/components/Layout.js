@@ -6,7 +6,7 @@ import Footer from '@components/Footer';
 
 export default function Layout({ children }) {
   return (
-    <>
+    <div className="print:w-3/4 print:mx-auto">
       <Head>
         <meta name="theme-color" content="#2158F4" key="theme-color" />
         <link
@@ -33,6 +33,6 @@ export default function Layout({ children }) {
       <Navigation />
       <main>{children}</main>
       <Footer />
-    </>
+    </div>
   );
 }
