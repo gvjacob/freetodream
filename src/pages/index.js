@@ -40,11 +40,13 @@ function Topper() {
         </div>
       </div>
 
-      <Image
-        className="rounded-md max-sm:w-full w-1/2"
-        src={hanvoiceHero}
-        alt="North-Korean father and son sit beside each other."
-      />
+      <div className="max-sm:w-full w-1/2 flex-shrink-0">
+        <Image
+          className="rounded-md w-full"
+          src={hanvoiceHero}
+          alt="North-Korean father and son sit beside each other."
+        />
+      </div>
     </header>
   );
 }
