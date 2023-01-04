@@ -3,8 +3,11 @@ import Head from 'next/head';
 import Meta from '@components/Meta';
 import Navigation from '@components/Navigation';
 import Footer from '@components/Footer';
+import { useLocaleTranslation } from '@utils/i18n';
 
 export default function Layout({ children }) {
+  const lt = useLocaleTranslation();
+
   return (
     <div className="print:w-3/4 print:mx-auto">
       <Head>
@@ -26,7 +29,7 @@ export default function Layout({ children }) {
       </Head>
 
       <Meta
-        description="Our new program aims to resettle 5 North Korean refugee families by 2023 and provide them with a safe and secure path towards a better future."
+        description={lt('seo.description')}
         image="https://freetodream.ca/img/hanvoice-og.jpg"
       />
 
