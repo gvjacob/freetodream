@@ -10,7 +10,7 @@ export default function ArticleLayout({ title, navigation, children }) {
 
   return (
     <article>
-      <Meta title={`${lt(title)} — #FreeToDream`} />
+      <Meta title={`${lt(title)} — Free to Dream`} />
 
       <header className="hv-site-padding grid grid-cols-12 gap-4 pt-24 pb-6 bg-blue mb-8 print:mb-0">
         <h1

@@ -72,7 +72,7 @@ export default function Home() {
 
   return (
     <div>
-      <Meta title={`${lt('navigation.home')} — #FreeToDream`} />
+      <Meta title={`${lt('navigation.home')} — Free to Dream`} />
       <Topper />
       <ProgramCard />
     </div>
