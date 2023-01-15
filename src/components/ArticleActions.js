@@ -23,7 +23,7 @@ export default function ArticleActions({ className }) {
         </button>
         <button
           className={cn(
-            'bg-white rounded-md flex items-center px-3  flex-shrink-0 transition-colors',
+            'bg-white rounded-md flex items-center px-3 flex-shrink-0 transition-colors',
             'hocus:bg-blue-900 hocus:text-white hocus:fill-white',
           )}
           onClick={() => window?.print()}

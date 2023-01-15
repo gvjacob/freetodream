@@ -5,7 +5,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 
 import { useLocaleTranslation } from '@utils/i18n';
 import hanvoiceLogo from '@img/hanvoice-logo.png';
-import LocaleSwitch from './LocalSwitch';
+import LocaleSwitch from './LocaleSwitch';
 import MobileMenu from './MobileMenu';
 
 function NavigationLink({ href, children }) {

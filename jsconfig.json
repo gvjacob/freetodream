@@ -6,6 +6,7 @@
       "@utils/*": ["./src/utils/*"],
       "@articles/*": ["./src/articles/*"],
       "@src/*": ["./src/*"],
+      "@svgs/*": ["./src/svgs/*"],
       "@img/*": ["./public/img/*"]
     }
   }

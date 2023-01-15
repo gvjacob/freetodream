@@ -17,4 +17,14 @@ export default withMDX({
     locales: ['en', 'ko'],
     defaultLocale: 'en',
   },
+
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.js?$/,
+      use: ['@svgr/webpack'],
+    });
+
+    return config;
+  },
 });

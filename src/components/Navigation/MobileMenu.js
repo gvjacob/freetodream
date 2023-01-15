@@ -4,7 +4,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 
 import { useLocaleTranslation } from '@utils/i18n';
 import hanvoiceLogo from '@img/hanvoice-logo.png';
-import LocaleSwitch from './LocalSwitch';
+import LocaleSwitch from './LocaleSwitch';
 
 export default function MobileMenu({ onClose }) {
   const lt = useLocaleTranslation();
