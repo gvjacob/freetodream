@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Good Sans', 'sans-serif'],
+        hangul: ['Noto Sans', 'sans-serif'],
       },
       colors: {
         iron: '#CFD5E4',
