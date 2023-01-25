@@ -36,6 +36,22 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/fonts/noto-sans-kr-v27-korean-regular.woff') format('woff'),
+    url('/fonts/noto-sans-kr-v27-korean-regular.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/fonts/noto-sans-kr-v27-korean-700.woff') format('woff'),
+    url('/fonts/noto-sans-kr-v27-korean-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 @layer utilities {
   .hv-site-padding {
     @apply px-4;
