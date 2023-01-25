@@ -15,7 +15,7 @@ export default function ArticleLayout({ title, navigation, children }) {
       <header className="hv-site-padding grid grid-cols-12 gap-4 pt-24 pb-6 bg-blue mb-8 print:mb-0">
         <h1
           className={cn(
-            'col-start-1 col-end-12 text-5xl text-white font-bold print:text-black',
+            'col-start-1 col-end-12 text-5xl text-white print:text-black',
             'md:col-start-2 md:col-end-10 md:text-6xl',
           )}
         >

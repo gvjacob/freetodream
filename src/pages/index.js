@@ -19,7 +19,7 @@ function Topper() {
       <div>
         <h1
           className={cn(
-            'text-blue text-3xl mb-4 mt-4 font-semibold',
+            'text-blue text-3xl mb-4 mt-4',
             'sm:text-4xl sm:mb-4',
             'lg:text-6xl lg:mb-8',
           )}
@@ -57,9 +57,7 @@ function ProgramCard() {
   return (
     <section className="hv-site-padding mt-14 sm:mt-20">
       <div className="bg-blue-100 rounded-md p-6 sm:p-10">
-        <h2 className="text-white text-3xl sm:text-4xl mb-4 font-semibold">
-          {lt('home.the-program')}
-        </h2>
+        <h2 className="text-white text-3xl sm:text-4xl mb-4">{lt('home.the-program')}</h2>
 
         <p className="text-white max-w-2xl">{lt('home.program-description')}</p>
       </div>
