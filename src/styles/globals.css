@@ -12,6 +12,30 @@ body {
   @apply bg-beige;
 }
 
+@font-face {
+  font-family: 'Good Sans';
+  src: url('/fonts/GoodSans-Regular.woff') format('woff'),
+    url('/fonts/GoodSans-Regular.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Good Sans';
+  src: url('/fonts/GoodSans-RegularItalic.woff') format('woff'),
+    url('/fonts/GoodSans-RegularItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Good Sans';
+  src: url('/fonts/GoodSans-Bold.woff') format('woff'),
+    url('/fonts/GoodSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 @layer utilities {
   .hv-site-padding {
     @apply px-4;

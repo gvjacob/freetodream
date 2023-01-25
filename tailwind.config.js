@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Good Sans', 'sans-serif'],
+      },
       colors: {
         iron: '#CFD5E4',
         blue: {
