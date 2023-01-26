@@ -12,7 +12,12 @@ export default function Layout({ children }) {
   const { locale } = useRouter();
 
   return (
-    <div className={cn('print:w-3/4 print:mx-auto', locale === 'ko' && 'font-hangul')}>
+    <div
+      className={cn(
+        'flex flex-col min-h-screen print:w-3/4 print:mx-auto',
+        locale === 'ko' && 'font-hangul',
+      )}
+    >
       <Head>
         <meta name="theme-color" content="#2158F4" key="theme-color" />
         <link
@@ -37,7 +42,7 @@ export default function Layout({ children }) {
       />
 
       <Navigation />
-      <main>{children}</main>
+      <main className="mb-10 print:mb-0">{children}</main>
       <Footer />
     </div>
   );

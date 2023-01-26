@@ -69,7 +69,7 @@ export default function Home() {
   const lt = useLocaleTranslation();
 
   return (
-    <div>
+    <div className="2xl:container mx-auto">
       <Meta title={`${lt('navigation.home')} — Free to Dream`} />
       <Topper />
       <ProgramCard />

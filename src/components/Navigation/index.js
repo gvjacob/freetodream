@@ -22,39 +22,43 @@ export default function Navigation() {
 
   return (
     <React.Fragment>
-      <header className="print:hidden hv-site-padding py-2 sm:py-4 flex items-center max-sm:justify-center bg-blue">
-        <div className="shrink-0 max-sm:flex-1 sm:order-1 ">
-          <LocaleSwitch />
-        </div>
+      <header className="print:hidden bg-blue">
+        <div className="hv-site-padding py-2 sm:py-4 flex items-center max-sm:justify-center 2xl:container mx-auto">
+          <div className="shrink-0 max-sm:flex-1 sm:order-1 ">
+            <LocaleSwitch />
+          </div>
 
-        <nav className="flex justify-between items-center sm:w-full sm:mr-10">
-          <Link href="/">
-            <span className="sr-only">{lt('navigation.home')}</span>
-            <Image className="max-sm:w-6 w-8" src={hanvoiceLogo} alt="" />
-          </Link>
+          <nav className="flex justify-between items-center sm:w-full sm:mr-10">
+            <Link href="/">
+              <span className="sr-only">{lt('navigation.home')}</span>
+              <Image className="max-sm:w-6 w-8" src={hanvoiceLogo} alt="" />
+            </Link>
 
-          <ul className="max-sm:hidden flex space-x-10">
-            <li>
-              <NavigationLink href="/about">{lt('navigation.about-hanvoice')}</NavigationLink>
-            </li>
+            <ul className="max-sm:hidden flex space-x-10">
+              <li>
+                <NavigationLink href="/about">{lt('navigation.about-hanvoice')}</NavigationLink>
+              </li>
 
-            <li>
-              <NavigationLink href="/process">{lt('navigation.process')}</NavigationLink>
-            </li>
+              <li>
+                <NavigationLink href="/process">{lt('navigation.process')}</NavigationLink>
+              </li>
 
-            <li>
-              <NavigationLink href="/life-in-canada">
-                {lt('navigation.life-in-canada')}
-              </NavigationLink>
-            </li>
-          </ul>
-        </nav>
+              <li>
+                <NavigationLink href="/life-in-canada">
+                  {lt('navigation.life-in-canada')}
+                </NavigationLink>
+              </li>
+            </ul>
+          </nav>
 
-        <div className="max-sm:flex-1 max-sm:flex max-sm:justify-end sm:hidden">
-          <Dialog.Root open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-            <Dialog.Trigger className="text-white text-sm">{lt('navigation.menu')}</Dialog.Trigger>
-            <MobileMenu onClose={() => setIsMobileMenuOpen(false)} />
-          </Dialog.Root>
+          <div className="max-sm:flex-1 max-sm:flex max-sm:justify-end sm:hidden">
+            <Dialog.Root open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+              <Dialog.Trigger className="text-white text-sm">
+                {lt('navigation.menu')}
+              </Dialog.Trigger>
+              <MobileMenu onClose={() => setIsMobileMenuOpen(false)} />
+            </Dialog.Root>
+          </div>
         </div>
       </header>
     </React.Fragment>
