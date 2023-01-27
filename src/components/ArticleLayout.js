@@ -13,7 +13,7 @@ export default function ArticleLayout({ title, navigation, children }) {
       <Meta title={`${lt(title)} — Free to Dream`} />
 
       <header className="bg-blue">
-        <div className="2xl:container mx-auto hv-site-padding grid grid-cols-12 gap-4 pt-24 pb-6 mb-8 print:mb-0">
+        <div className="2xl:container mx-auto hv-site-padding grid grid-cols-12 gap-4 pt-24 pb-6 mb-8 print:mb-0 xl:pt-48">
           <h1
             className={cn(
               'col-start-1 col-end-12 text-5xl text-white print:text-black',
