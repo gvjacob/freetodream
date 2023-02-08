@@ -7,6 +7,10 @@
     "en": "https://hanvoice.ca/",
     "ko": "https://hanvoice.ca/"
   },
+  "navigation.apply": {
+    "en": "Apply",
+    "ko": "신청하기"
+  },
   "navigation.home": {
     "en": "Home",
     "ko": "집"
@@ -85,6 +89,6 @@
   },
   "footer.apply": {
     "en": "Submit an Application",
-    "ko": "적용하다"
+    "ko": "신청하기"
   }
 }

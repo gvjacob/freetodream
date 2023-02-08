@@ -24,18 +24,16 @@ export default function Navigation() {
   return (
     <React.Fragment>
       <header className="bg-blue print:hidden">
-        <Container className="flex items-center py-2 max-sm:justify-center sm:py-4">
-          <div className="shrink-0 max-sm:flex-1 sm:order-1 ">
-            <LocaleSwitch />
-          </div>
+        <Container className="flex items-center gap-4 py-2 max-sm:justify-center sm:py-4">
+          <Link href="/">
+            <span className="sr-only">{lt('navigation.home')}</span>
+            <Image className="w-10 max-sm:w-6" src={hanvoiceLogo} alt="" />
+          </Link>
 
-          <nav className="flex items-center justify-between sm:mr-10 sm:w-full">
-            <Link href="/">
-              <span className="sr-only">{lt('navigation.home')}</span>
-              <Image className="w-8 max-sm:w-6" src={hanvoiceLogo} alt="" />
-            </Link>
+          <nav className="flex w-full flex-1 flex-col items-end divide-y-[1px] divide-blue-100">
+            <LocaleSwitch className="pb-2" />
 
-            <ul className="flex space-x-10 max-sm:hidden">
+            <ul className="flex w-full justify-end space-x-10 pt-4 max-sm:hidden">
               <li>
                 <NavigationLink href="/about">{lt('navigation.about-hanvoice')}</NavigationLink>
               </li>
@@ -48,6 +46,17 @@ export default function Navigation() {
                 <NavigationLink href="/life-in-canada">
                   {lt('navigation.life-in-canada')}
                 </NavigationLink>
+              </li>
+
+              <li>
+                <a
+                  className="rounded bg-white px-3 py-2 text-sm text-black transition-colors hocus:bg-blue-dark hocus:text-white"
+                  href={lt('navigation.apply-form')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {lt('navigation.apply')}
+                </a>
               </li>
             </ul>
           </nav>
