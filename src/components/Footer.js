@@ -8,11 +8,13 @@ export default function Footer() {
   return (
     <footer className="mt-auto bg-blue">
       <div className="hv-site-padding mx-auto 2xl:container">
-        <div className="mx-auto flex max-w-xl flex-col items-center gap-6 py-14 text-white">
-          <h2 className="text-center text-6xl tracking-tight">{lt('footer.headline')}</h2>
+        <div className="mx-auto flex max-w-xl flex-col items-center gap-6 py-10 text-white lg:py-14">
+          <h2 className="text-center text-3xl tracking-tight sm:text-4xl xl:text-6xl">
+            {lt('footer.headline')}
+          </h2>
 
           <a
-            className="rounded-md bg-blue-dark p-4 transition-colors hocus:bg-white hocus:text-black"
+            className="rounded-md bg-blue-dark p-4 transition-colors hocus:bg-white hocus:text-black max-lg:text-sm"
             href="https://hanvoice.ca"
           >
             {lt('footer.apply')}
