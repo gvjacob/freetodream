@@ -47,20 +47,6 @@ function Topper() {
   );
 }
 
-function ProgramCard() {
-  const lt = useLocaleTranslation();
-
-  return (
-    <section className="mt-14 sm:mt-20">
-      <div className="rounded-md bg-blue-100 p-6 sm:p-10">
-        <h2 className="mb-4 text-3xl text-white sm:text-4xl">{lt('home.the-program')}</h2>
-
-        <p className="max-w-2xl text-white">{lt('home.program-description')}</p>
-      </div>
-    </section>
-  );
-}
-
 export default function Home() {
   const lt = useLocaleTranslation();
 
@@ -68,7 +54,6 @@ export default function Home() {
     <Container>
       <Meta title={`${lt('navigation.home')} — Free to Dream`} />
       <Topper />
-      <ProgramCard />
     </Container>
   );
 }
