@@ -78,5 +78,9 @@
   "footer.program-credits": {
     "en": "Program by HanVoice in collaboration with the Government of Canada",
     "ko": "캐나다 정부와 협력하여 Hanvoice의 프로그램"
+  },
+  "footer.apply": {
+    "en": "Submit an Application",
+    "ko": "적용하다"
   }
 }

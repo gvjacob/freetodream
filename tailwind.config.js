@@ -23,6 +23,7 @@ module.exports = {
           500: '#2158F4',
           DEFAULT: '#2158F4',
           900: '#1A23D9',
+          dark: '#0034C9',
         },
         beige: '#F4F1ED',
       },
