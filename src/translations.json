@@ -63,6 +63,34 @@
     "en": "We plan to help resettle five North Korean refugee families in transit countries by the end of 2023. The pilot project is carried out under a partnership with the Government of Canada. The project will focus on North Korean women and their families, with a special focus on those with experiences of sexual and gender-based violence. If the pilot is successful, it would allow more North Korean refugees to resettle to Canada, and other countries could follow our example.",
     "ko": "2023년 말까지 제3국에 체류하고 있는 탈북민 다섯 가정의 정착을 지원할 계획입니다. 이 시범 사업은 캐나다 정부와 협력하여 진행됩니다. 이 사업은 성폭력 및 젠더폭력 경험이 있는 북한 여성과 그 가족에 초점을 맞출 것입니다. 시범 사업이 성공하게 되면 더 많은 탈북민이 캐나다에 정착할 수 있을 것을 기대하며, 다른 나라들도 이러한 성공사례를 따를 수 있을 것입니다."
   },
+  "home.summary.heading": {
+    "en": "Program Summary",
+    "ko": "프로그램 요약"
+  },
+  "home.summary.about": {
+    "en": "About",
+    "ko": "에 대한"
+  },
+  "home.summary.about-description": {
+    "en": "In partnership with the Canadian Government, we will facilitate the process of resettling five North Korean refugee families from Southeast Asia within two years. The pilot will focus on North Korean women and their families, with special focus on those at risk of sexual and gender-based violence.",
+    "ko": "캐나다 정부와 협력하여 우리는 2 년 안에 동남아시아에서 5 명의 북한 난민 가족을 재설정하는 과정을 촉진 할 것입니다. 조종사는 성적 및 성폭력의 위험에 처한 사람들에 특히 중점을 둔 북한 여성과 그 가족에 중점을 둘 것입니다."
+  },
+  "home.summary.eligibility": {
+    "en": "Eligibility",
+    "ko": "적임"
+  },
+  "home.summary.eligibility-description": {
+    "en": "Foreign national must be a woman, who has been victim of sexual gender-based violence, a North Korean citizen, with documentation proving citizenship, has not previously resided in South Korea, has never held a position in service of the North Korean government.",
+    "ko": "외국 국민은 성적 성 폭력의 희생자였던 여성이어야하며, 북한 시민은 시민권을 입증 한 문서가 이전에 한국에 거주하지 않았으며 북한 정부를 섬기지 않았다."
+  },
+  "home.summary.process": {
+    "en": "Process",
+    "ko": "신청 과정"
+  },
+  "home.summary.process-description": {
+    "en": "Once you sign up, HanVoice will send your information to four partners, Liberty in North Korea, Helping Hands Korea, Now Action and Unity for Human Rights, and Citizens' Alliance for North Korean Human Rights.",
+    "ko": "일단 가입하면 Hanvoice는 귀하의 정보를 4 명의 파트너, 북한의 Liberty, Helping Hands Honess, 현재 인권에 대한 행동과 연합, 북한 인권에 대한 시민 동맹에 귀하의 정보를 보냅니다."
+  },
   "article.navigation-heading": {
     "en": "Jump To",
     "ko": "점프하십시오"
