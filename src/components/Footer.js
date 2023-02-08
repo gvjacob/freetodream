@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="mt-auto bg-blue text-white">
       <Container className="pt-10 pb-8 lg:pt-14 lg:pb-8">
-        <div className="mx-auto mb-8 flex max-w-xl flex-col items-center gap-6">
+        <div className="mx-auto mb-10 flex max-w-xl flex-col items-center gap-6 xl:mb-20">
           <h2 className="text-center text-3xl tracking-tight sm:text-4xl xl:text-6xl">
             {lt('footer.headline')}
           </h2>
