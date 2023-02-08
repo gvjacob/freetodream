@@ -40,7 +40,9 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-1 lg:order-3 lg:justify-end">
-            <p className="print:mt-6 max-lg:mt-8 lg:ml-auto">© 2022 HanVoice.ca</p>
+            <p className="print:mt-6 max-lg:mt-8 lg:ml-auto">
+              © {new Date().getFullYear()} HanVoice.ca
+            </p>
           </div>
         </div>
       </div>
