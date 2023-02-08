@@ -11,7 +11,7 @@ export default function LocaleSwitch({ className, ...rest }) {
 
   return (
     <button
-      className={cn('flex items-center space-x-1 text-xs text-white sm:text-sm', className)}
+      className={cn('flex items-center space-x-1 text-white', className)}
       onClick={() => localeSwitch(router.locale === 'en' ? 'ko' : 'en')}
       {...rest}
     >
