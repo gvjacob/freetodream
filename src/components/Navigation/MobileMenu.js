@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import cn from 'classnames';
 import Image from 'next/image';
 import * as Dialog from '@radix-ui/react-dialog';
 
@@ -8,11 +10,17 @@ import LocaleSwitch from './LocaleSwitch';
 
 export default function MobileMenu({ onClose }) {
   const lt = useLocaleTranslation();
+  const { locale } = useRouter();
 
   return (
     <Dialog.Portal>
       <Dialog.Overlay />
-      <Dialog.Content className="fixed inset-0 z-50 flex h-full w-full flex-col justify-between bg-blue">
+      <Dialog.Content
+        className={cn(
+          'fixed inset-0 z-50 flex h-full w-full flex-col justify-between bg-blue',
+          locale === 'ko' && 'font-hangul',
+        )}
+      >
         <Dialog.Title className="sr-only">Menu</Dialog.Title>
 
         <header className="hv-site-padding flex items-center justify-center py-4">
