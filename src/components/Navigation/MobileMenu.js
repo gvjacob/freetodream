@@ -12,7 +12,7 @@ export default function MobileMenu({ onClose }) {
   return (
     <Dialog.Portal>
       <Dialog.Overlay />
-      <Dialog.Content className="absolute top-0 left-0 z-50 flex h-full w-full flex-col justify-between bg-blue">
+      <Dialog.Content className="fixed inset-0 z-50 flex h-full w-full flex-col justify-between bg-blue">
         <Dialog.Title className="sr-only">Menu</Dialog.Title>
 
         <header className="hv-site-padding flex items-center justify-center py-4">
