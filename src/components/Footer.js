@@ -15,7 +15,9 @@ export default function Footer() {
 
           <a
             className="rounded-md bg-blue-dark p-4 transition-colors hocus:bg-white hocus:text-black max-lg:text-sm"
-            href="https://hanvoice.ca"
+            href={lt('navigation.apply-form')}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {lt('footer.apply')}
           </a>
