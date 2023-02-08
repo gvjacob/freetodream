@@ -24,14 +24,18 @@ export default function Navigation() {
   return (
     <React.Fragment>
       <header className="bg-blue print:hidden">
-        <Container className="flex items-center gap-4 py-2 max-sm:justify-center sm:py-4">
+        <Container className="flex items-center gap-4 py-2 max-lg:justify-center sm:py-4">
+          <div className="flex-1 md:hidden">
+            <LocaleSwitch className="" />
+          </div>
+
           <Link href="/">
             <span className="sr-only">{lt('navigation.home')}</span>
             <Image className="w-10 max-sm:w-6" src={hanvoiceLogo} alt="" />
           </Link>
 
-          <nav className="flex w-full flex-1 flex-col items-end divide-y-[1px] divide-blue-100">
-            <LocaleSwitch className="pb-2" />
+          <nav className="flex w-full flex-1 flex-col items-end divide-y-[1px] divide-blue-100 max-md:hidden">
+            <LocaleSwitch className="pb-2 max-md:hidden" />
 
             <ul className="flex w-full justify-end space-x-10 pt-4 max-sm:hidden">
               <li>
@@ -61,7 +65,7 @@ export default function Navigation() {
             </ul>
           </nav>
 
-          <div className="max-sm:flex max-sm:flex-1 max-sm:justify-end sm:hidden">
+          <div className="flex flex-1 justify-end md:hidden">
             <Dialog.Root open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <Dialog.Trigger className="text-sm text-white">
                 {lt('navigation.menu')}
