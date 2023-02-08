@@ -4,6 +4,7 @@ import Image from 'next/image';
 import * as Dialog from '@radix-ui/react-dialog';
 
 import { useLocaleTranslation } from '@utils/i18n';
+import Container from '@components/Container';
 import hanvoiceLogo from '@img/hanvoice-logo.png';
 import LocaleSwitch from './LocaleSwitch';
 import MobileMenu from './MobileMenu';
@@ -22,19 +23,19 @@ export default function Navigation() {
 
   return (
     <React.Fragment>
-      <header className="print:hidden bg-blue">
-        <div className="hv-site-padding py-2 sm:py-4 flex items-center max-sm:justify-center 2xl:container mx-auto">
+      <header className="bg-blue print:hidden">
+        <Container className="flex items-center py-2 max-sm:justify-center sm:py-4">
           <div className="shrink-0 max-sm:flex-1 sm:order-1 ">
             <LocaleSwitch />
           </div>
 
-          <nav className="flex justify-between items-center sm:w-full sm:mr-10">
+          <nav className="flex items-center justify-between sm:mr-10 sm:w-full">
             <Link href="/">
               <span className="sr-only">{lt('navigation.home')}</span>
-              <Image className="max-sm:w-6 w-8" src={hanvoiceLogo} alt="" />
+              <Image className="w-8 max-sm:w-6" src={hanvoiceLogo} alt="" />
             </Link>
 
-            <ul className="max-sm:hidden flex space-x-10">
+            <ul className="flex space-x-10 max-sm:hidden">
               <li>
                 <NavigationLink href="/about">{lt('navigation.about-hanvoice')}</NavigationLink>
               </li>
@@ -51,15 +52,15 @@ export default function Navigation() {
             </ul>
           </nav>
 
-          <div className="max-sm:flex-1 max-sm:flex max-sm:justify-end sm:hidden">
+          <div className="max-sm:flex max-sm:flex-1 max-sm:justify-end sm:hidden">
             <Dialog.Root open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-              <Dialog.Trigger className="text-white text-sm">
+              <Dialog.Trigger className="text-sm text-white">
                 {lt('navigation.menu')}
               </Dialog.Trigger>
               <MobileMenu onClose={() => setIsMobileMenuOpen(false)} />
             </Dialog.Root>
           </div>
-        </div>
+        </Container>
       </header>
     </React.Fragment>
   );

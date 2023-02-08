@@ -1,13 +1,15 @@
-import SVG from '@components/SVG';
-import { useLocaleTranslation } from '@utils/i18n';
 import Link from 'next/link';
+
+import SVG from '@components/SVG';
+import Container from '@components/Container';
+import { useLocaleTranslation } from '@utils/i18n';
 
 export default function Footer() {
   const lt = useLocaleTranslation();
 
   return (
     <footer className="mt-auto bg-blue text-white">
-      <div className="hv-site-padding mx-auto pt-10 pb-8 lg:pt-14 lg:pb-8 2xl:container">
+      <Container className="pt-10 pb-8 lg:pt-14 lg:pb-8">
         <div className="mx-auto mb-8 flex max-w-xl flex-col items-center gap-6">
           <h2 className="text-center text-3xl tracking-tight sm:text-4xl xl:text-6xl">
             {lt('footer.headline')}
@@ -47,7 +49,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 }
