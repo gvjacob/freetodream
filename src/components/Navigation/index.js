@@ -24,14 +24,14 @@ export default function Navigation() {
   return (
     <React.Fragment>
       <header className="bg-blue print:hidden">
-        <Container className="flex items-center gap-4 py-2 max-lg:justify-center sm:py-4">
+        <Container className="flex items-center gap-4 py-4 max-lg:justify-center">
           <div className="flex-1 md:hidden">
             <LocaleSwitch className="" />
           </div>
 
           <Link href="/">
             <span className="sr-only">{lt('navigation.home')}</span>
-            <Image className="w-10 max-sm:w-6" src={hanvoiceLogo} alt="" />
+            <Image className="w-8 max-sm:w-6 lg:w-10" src={hanvoiceLogo} alt="" />
           </Link>
 
           <nav className="flex w-full flex-1 flex-col items-end divide-y-[1px] divide-blue-100 max-md:hidden">

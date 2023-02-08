@@ -12,27 +12,25 @@ export default function MobileMenu({ onClose }) {
   return (
     <Dialog.Portal>
       <Dialog.Overlay />
-      <Dialog.Content className="absolute top-0 left-0 w-full h-full bg-blue flex flex-col justify-between">
+      <Dialog.Content className="absolute top-0 left-0 flex h-full w-full flex-col justify-between bg-blue">
         <Dialog.Title className="sr-only">Menu</Dialog.Title>
 
-        <header className="hv-site-padding flex items-center justify-center py-2">
-          <div className="flex-1 flex justify-end order-1">
-            <Dialog.Close className="text-white text-sm">{lt('navigation.close')}</Dialog.Close>
+        <header className="hv-site-padding flex items-center justify-center py-4">
+          <div className="order-1 flex flex-1 justify-end">
+            <Dialog.Close className="text-sm text-white">{lt('navigation.close')}</Dialog.Close>
           </div>
-
-          <div className="shrink-0 flex-1">
+          <div className="flex-1 shrink-0">
             <LocaleSwitch />
           </div>
-
           <Link href="/">
-            <Image className="max-sm:w-6 w-8" src={hanvoiceLogo} alt="" />
+            <Image className="w-8 max-sm:w-6" src={hanvoiceLogo} alt="" />
           </Link>
         </header>
 
         <ul>
           <li>
             <Link
-              className="hv-site-padding block text-white text-4xl py-8"
+              className="hv-site-padding block py-8 text-4xl text-white"
               href="/about"
               onClick={onClose}
             >
@@ -42,7 +40,7 @@ export default function MobileMenu({ onClose }) {
 
           <li>
             <Link
-              className="hv-site-padding bg-blue-400 block text-white text-4xl py-8"
+              className="hv-site-padding block bg-blue-400 py-8 text-4xl text-white"
               href="/process"
               onClick={onClose}
             >
@@ -52,7 +50,7 @@ export default function MobileMenu({ onClose }) {
 
           <li>
             <Link
-              className="hv-site-padding bg-blue-300 block text-white text-4xl py-8"
+              className="hv-site-padding block bg-blue-300 py-8 text-4xl text-white"
               href="/life-in-canada"
               onClick={onClose}
             >
