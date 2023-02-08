@@ -23,7 +23,7 @@ export default function Navigation() {
 
   return (
     <React.Fragment>
-      <header className="bg-blue print:hidden">
+      <header className="absolute top-0 w-full print:hidden">
         <Container className="flex items-center gap-4 py-4 max-lg:justify-center">
           <div className="flex-1 md:hidden">
             <LocaleSwitch className="" />
