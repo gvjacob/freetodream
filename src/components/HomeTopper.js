@@ -25,7 +25,7 @@ export default function HomeTopper() {
             {lt('home.headline')}
           </h1>
 
-          <p className="max-w-xs text-white">{lt('home.introduction')}</p>
+          <p className="max-w-sm text-lg text-white">{lt('home.introduction')}</p>
 
           <div className="mt-8 flex items-center gap-4">
             <a

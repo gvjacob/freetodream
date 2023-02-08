@@ -5,7 +5,7 @@ function SummarySection({ title, description }) {
   return (
     <div className="px-8 max-lg:py-8">
       <h3 className="mb-2 text-xl font-bold text-blue">{title}</h3>
-      <p>{description}</p>
+      <p className="max-lg:text-sm">{description}</p>
     </div>
   );
 }
