@@ -10,8 +10,10 @@ export default function HomeTopper() {
   const lt = useLocaleTranslation();
 
   return (
-    <header className="bg-blue">
-      <Container className="flex flex-col-reverse pt-48 pb-8 md:flex-row md:items-end md:justify-between md:space-x-10">
+    <header className="relative">
+      <div className="absolute inset-0 -z-10 h-[110%] bg-blue" />
+
+      <Container className="relative flex flex-col-reverse pt-48 pb-8 md:flex-row md:items-end md:justify-between md:space-x-10">
         <div>
           <h1
             className={cn(
