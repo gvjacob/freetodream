@@ -3,7 +3,7 @@ import Container from '@components/Container';
 
 function SummarySection({ title, description }) {
   return (
-    <div className="px-8">
+    <div className="px-8 max-lg:py-8">
       <h3 className="mb-2 text-xl font-bold text-blue">{title}</h3>
       <p>{description}</p>
     </div>
@@ -21,7 +21,7 @@ export default function HomeProgramSummary() {
       >
         <h2 className="sr-only">{lt('home.summary.heading')}</h2>
 
-        <div className="grid grid-cols-3 divide-x-[1px] divide-gray-200 py-8">
+        <div className="divide-gray-200 max-lg:divide-y-[1px] lg:grid lg:grid-cols-3 lg:divide-x-[1px] lg:py-8">
           <SummarySection
             title={lt('home.summary.about')}
             description={lt('home.summary.about-description')}
