@@ -21,13 +21,8 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="flex items-end justify-between">
-          <div className="flex-1 max-sm:gap-10 sm:gap-2">
-            <SVG.CanadaWordmark className="w-32" aria-hidden />
-            <p className="mt-4 max-w-sm">{lt('footer.program-credits')}</p>
-          </div>
-
-          <ul className="flex gap-8 print:hidden">
+        <div className="flex max-lg:flex-col lg:items-end lg:justify-between">
+          <ul className="flex gap-2 print:hidden max-lg:mb-10 max-lg:flex-col lg:order-2 lg:gap-8">
             <li>
               <Link href="/about">{lt('navigation.about-hanvoice')}</Link>
             </li>
@@ -39,8 +34,13 @@ export default function Footer() {
             </li>
           </ul>
 
-          <div className="flex flex-1 justify-end">
-            <p className="mt-10 ml-auto print:mt-6">© 2022 HanVoice.ca</p>
+          <div className="flex-1 max-sm:gap-10 sm:gap-2 lg:order-1">
+            <SVG.CanadaWordmark className="w-32" aria-hidden />
+            <p className="mt-4 max-w-xs">{lt('footer.program-credits')}</p>
+          </div>
+
+          <div className="flex flex-1 lg:order-3 lg:justify-end">
+            <p className="print:mt-6 max-lg:mt-8 lg:ml-auto">© 2022 HanVoice.ca</p>
           </div>
         </div>
       </div>
