@@ -1,6 +1,7 @@
 import cn from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
+import * as Dialog from '@radix-ui/react-dialog';
 
 import { useLocaleTranslation } from '@utils/i18n';
 import Container from '@components/Container';
@@ -44,11 +45,34 @@ export default function HomeTopper() {
         </div>
 
         <div className="w-1/2 flex-shrink-0 max-md:w-full">
-          <Image
-            className="w-full rounded-md"
-            src={hanvoiceHero}
-            alt="North-Korean father and son sit beside each other."
-          />
+          <Dialog.Root>
+            <Dialog.Trigger>
+              <Image
+                className="w-full rounded-md"
+                src={hanvoiceHero}
+                alt="North-Korean father and son sit beside each other."
+              />
+            </Dialog.Trigger>
+
+            <Dialog.Portal>
+              <Dialog.Overlay className="fixed inset-0 z-50 bg-black opacity-80" />
+              <Dialog.Content className="fixed inset-0 z-50 flex items-center justify-center">
+                <Dialog.Title className="sr-only">{lt('home.youtube-video-title')}</Dialog.Title>
+                <iframe
+                  className="max-lg:p-10 lg:h-1/2 lg:w-1/2"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/urP4kvbsXQ0?&autoplay=1"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                />
+                <Dialog.Close className="absolute top-0 right-0 p-10 text-white">
+                  Close
+                </Dialog.Close>
+              </Dialog.Content>
+            </Dialog.Portal>
+          </Dialog.Root>
         </div>
       </Container>
     </header>
