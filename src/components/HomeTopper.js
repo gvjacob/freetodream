@@ -67,7 +67,7 @@ export default function HomeTopper() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
                 />
-                <Dialog.Close className="absolute top-0 right-0 p-10 text-white">
+                <Dialog.Close className="absolute rounded-md bg-white px-3 py-2 transition-colors hocus:bg-blue hocus:text-white max-lg:bottom-0 max-lg:left-1/2 max-lg:-translate-y-4 max-lg:-translate-x-1/2 lg:top-0 lg:right-0 lg:-translate-x-4 lg:translate-y-4">
                   Close
                 </Dialog.Close>
               </Dialog.Content>
