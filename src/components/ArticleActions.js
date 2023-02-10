@@ -14,10 +14,7 @@ export default function ArticleActions({ className }) {
 
       <div className="flex justify-between space-x-2">
         <a
-          className={cn(
-            'w-full rounded-md bg-blue py-3 text-center font-semibold text-white transition-colors',
-            'hocus:bg-blue-900',
-          )}
+          className="w-full rounded-md bg-blue py-3 text-center font-semibold text-white transition-colors hocus:bg-blue-900"
           href={lt('navigation.apply-form')}
           target="_blank"
           rel="noopener noreferrer"

@@ -11,7 +11,7 @@ import MobileMenu from './MobileMenu';
 
 function NavigationLink({ href, children }) {
   return (
-    <Link className="text-white" href={href}>
+    <Link className="text-white underline-offset-4 hocus:underline" href={href}>
       {children}
     </Link>
   );

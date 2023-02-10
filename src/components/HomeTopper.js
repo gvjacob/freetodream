@@ -38,7 +38,10 @@ export default function HomeTopper() {
               {lt('home.apply')}
             </a>
 
-            <Link className="text-white underline underline-offset-4" href="/process">
+            <Link
+              className="text-white underline underline-offset-4 hocus:no-underline"
+              href="/process"
+            >
               {lt('home.learn-more')}
             </Link>
           </div>

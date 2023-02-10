@@ -26,7 +26,7 @@ export default function Footer() {
             </a>
 
             <a
-              className="underline underline-offset-4 max-lg:text-sm"
+              className="underline underline-offset-4 hocus:no-underline max-lg:text-sm"
               href={lt('footer.newsletter')}
               target="_blank"
               rel="noopener noreferrer"
@@ -39,13 +39,19 @@ export default function Footer() {
         <div className="flex max-lg:flex-col lg:items-end lg:justify-between">
           <ul className="flex gap-2 print:hidden max-lg:mb-10 max-lg:flex-col lg:order-2 lg:gap-8">
             <li>
-              <Link href="/about">{lt('navigation.about-hanvoice')}</Link>
+              <Link className="underline-offset-4 hocus:underline" href="/about">
+                {lt('navigation.about-hanvoice')}
+              </Link>
             </li>
             <li>
-              <Link href="/process">{lt('navigation.process')}</Link>
+              <Link className="underline-offset-4 hocus:underline" href="/process">
+                {lt('navigation.process')}
+              </Link>
             </li>
             <li>
-              <Link href="/life-in-canada">{lt('navigation.life-in-canada')}</Link>
+              <Link className="underline-offset-4 hocus:underline" href="/life-in-canada">
+                {lt('navigation.life-in-canada')}
+              </Link>
             </li>
           </ul>
 
