@@ -8,7 +8,7 @@ export default function ArticleActions({ className }) {
 
   return (
     <div className={className}>
-      <p className="mb-4 max-w-[200px] text-sm font-semibold text-gray-500">
+      <p className="mb-4 max-w-[200px] text-sm font-semibold text-gray-500 lg:max-w-[220px] lg:text-base">
         {lt('article.actions-heading')}
       </p>
 
