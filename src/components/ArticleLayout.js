@@ -14,10 +14,10 @@ export default function ArticleLayout({ title, navigation, children }) {
       <Meta title={`${lt(title)} — Free to Dream`} />
 
       <header className="bg-blue">
-        <Container className="mb-8 grid grid-cols-12 gap-4 pt-24 pb-6 print:mb-0 xl:pt-48">
+        <Container className="mb-8 grid grid-cols-12 gap-4 pt-36 pb-6 print:mb-0 sm:pt-48 xl:pt-72">
           <h1
             className={cn(
-              'col-start-1 col-end-12 text-5xl text-white print:text-black',
+              'col-start-1 col-end-12 text-4xl text-white print:text-black',
               'md:col-start-2 md:col-end-10 md:text-6xl xl:text-7xl',
             )}
           >
