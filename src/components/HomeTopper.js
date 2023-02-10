@@ -31,7 +31,7 @@ export default function HomeTopper() {
           <div className="mt-8 flex items-center gap-4">
             <a
               className="rounded-md bg-blue-dark p-4 text-white transition-colors hocus:bg-white hocus:text-black"
-              href="/apply"
+              href={lt('navigation.apply-form')}
               target="_blank"
               rel="noopener noreferrer"
             >
