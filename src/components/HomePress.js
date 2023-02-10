@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import cn from 'classnames';
 
+import { useLocaleTranslation } from '@utils/i18n';
 import Container from '@components/Container';
 import APLogo from '@img/press/associated-press.png';
 import CBCLogo from '@img/press/cbc.png';
@@ -25,10 +26,12 @@ function Logo({ src, alt, href, small }) {
 }
 
 export default function HomePress() {
+  const lt = useLocaleTranslation();
+
   return (
     <section className="my-10" aria-label="As seen in">
       <Container>
-        <h2 className="sr-only">As seen in</h2>
+        <h2 className="sr-only">{lt('home.as-seen-in')}</h2>
 
         <ul className="grid grid-cols-3 divide-x-[1px] divide-gray-200 border-x border-x-gray-200 lg:grid-cols-6">
           <Logo

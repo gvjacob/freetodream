@@ -89,7 +89,11 @@
   },
   "home.summary.process-description": {
     "en": "Once you sign up, HanVoice will send your information to four partners, Liberty in North Korea, Helping Hands Korea, Now Action and Unity for Human Rights, and Citizens' Alliance for North Korean Human Rights.",
-    "ko": "일단 가입하면 Hanvoice는 귀하의 정보를 4 명의 파트너, 북한의 Liberty, Helping Hands Honess, 현재 인권에 대한 행동과 연합, 북한 인권에 대한 시민 동맹에 귀하의 정보를 보냅니다."
+    "ko": "일단 가입하면 HanVoice는 귀하의 정보를 4 명의 파트너, 북한의 Liberty, Helping Hands Honess, 현재 인권에 대한 행동과 연합, 북한 인권에 대한 시민 동맹에 귀하의 정보를 보냅니다."
+  },
+  "home.as-seen-in": {
+    "en": "As seen in",
+    "ko": "볼 수 있듯이"
   },
   "article.navigation-heading": {
     "en": "Jump To",
@@ -113,7 +117,7 @@
   },
   "footer.program-credits": {
     "en": "Program by HanVoice in collaboration with the Government of Canada",
-    "ko": "캐나다 정부와 협력하여 Hanvoice의 프로그램"
+    "ko": "캐나다 정부와 협력하여 HanVoice의 프로그램"
   },
   "footer.apply": {
     "en": "Submit an Application",
