@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import cn from 'classnames';
 
 import Container from '@components/Container';
 import APLogo from '@img/press/associated-press.png';
@@ -7,14 +8,18 @@ import JoongAngLogo from '@img/press/joong-ang.png';
 import GlobeAndMailLogo from '@img/press/the-globe-and-mail.png';
 import TorontoStarLogo from '@img/press/toronto-star.png';
 import YonhapLogo from '@img/press/yonhap.png';
-import Link from 'next/link';
 
-function Logo({ src, alt, href }) {
+function Logo({ src, alt, href, small }) {
   return (
     <li>
-      <Link className="flex h-72 items-center justify-center" href={href}>
-        <Image className="grayscale" src={src} alt={alt} />
-      </Link>
+      <a
+        className="flex h-32 items-center justify-center transition-colors hocus:bg-gray-200 sm:h-48 xl:h-56"
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image className={cn('w-3/5 grayscale', small && 'scale-75')} src={src} alt={alt} />
+      </a>
     </li>
   );
 }
@@ -25,7 +30,7 @@ export default function HomePress() {
       <Container>
         <h2 className="sr-only">As seen in</h2>
 
-        <ul className="grid grid-cols-5 divide-y-[1px] divide-x-[1px] divide-gray-200">
+        <ul className="grid grid-cols-3 divide-x-[1px] divide-gray-200 border-x border-x-gray-200 lg:grid-cols-6">
           <Logo
             src={APLogo}
             alt="Associated Press"
@@ -48,6 +53,7 @@ export default function HomePress() {
             src={GlobeAndMailLogo}
             alt="The Globe and Mail"
             href="https://www.theglobeandmail.com/canada/article-canadian-citizens-will-be-able-to-sponsor-fleeing-north-koreans-for/"
+            small
           />
 
           <Logo
