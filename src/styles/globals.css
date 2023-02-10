@@ -65,9 +65,13 @@ body {
     margin-block-start: 1rem;
   }
 
+  .hv-article-body {
+    @apply xl:text-xl;
+  }
+
   /* Headings */
   .hv-article-body h2 {
-    @apply text-2xl sm:text-3xl font-semibold;
+    @apply text-2xl font-semibold sm:text-3xl xl:text-4xl;
   }
 
   .hv-article-body h2:not(:first-child) {
@@ -80,7 +84,7 @@ body {
 
   /* Lists */
   .hv-article-body ul {
-    @apply pl-4 list-disc;
+    @apply list-disc pl-4;
   }
 
   /* Tables */
@@ -91,7 +95,7 @@ body {
 
   .hv-article-body table th,
   td {
-    @apply text-left text-xs sm:text-sm p-2;
+    @apply p-2 text-left text-xs sm:text-sm;
     @apply border-l-[1px] border-b-[1px] border-gray-400;
   }
 
