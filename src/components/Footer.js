@@ -10,19 +10,30 @@ export default function Footer() {
   return (
     <footer className="mt-auto bg-blue text-white print:hidden">
       <Container className="pt-10 pb-8 lg:pt-14 lg:pb-8">
-        <div className="mx-auto mb-10 flex max-w-xl flex-col items-center gap-6 xl:mb-20">
+        <div className="mx-auto mb-10 flex max-w-xl flex-col items-center gap-6 xl:mb-32">
           <h2 className="text-center text-3xl tracking-tight sm:text-4xl xl:text-6xl">
             {lt('footer.headline')}
           </h2>
 
-          <a
-            className="rounded-md bg-blue-dark p-4 transition-colors hocus:bg-white hocus:text-black max-lg:text-sm"
-            href={lt('navigation.apply-form')}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {lt('footer.apply')}
-          </a>
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            <a
+              className="rounded-md bg-blue-dark p-4 transition-colors hocus:bg-white hocus:text-black max-lg:text-sm"
+              href={lt('navigation.apply-form')}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {lt('footer.apply')}
+            </a>
+
+            <a
+              className="underline underline-offset-4 max-lg:text-sm"
+              href={lt('footer.newsletter')}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {lt('footer.newsletter-sign-up')}
+            </a>
+          </div>
         </div>
 
         <div className="flex max-lg:flex-col lg:items-end lg:justify-between">
