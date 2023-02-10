@@ -43,10 +43,18 @@ export default function Footer() {
             <p className="mt-4 max-w-xs">{lt('footer.program-credits')}</p>
           </div>
 
-          <div className="flex flex-1 lg:order-3 lg:justify-end">
-            <p className="print:mt-6 max-lg:mt-8 lg:ml-auto">
-              © {new Date().getFullYear()} HanVoice.ca
-            </p>
+          <div className="flex flex-1 flex-col gap-1 max-lg:mt-8 lg:order-3 lg:justify-end">
+            <a
+              className="flex gap-2 underline-offset-4 hocus:underline lg:ml-auto"
+              href={lt('footer.program-pdf')}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SVG.PrintIcon className="w-5 fill-white" aria-hidden />
+              {lt('footer.print')}
+            </a>
+
+            <p className="lg:ml-auto">© {new Date().getFullYear()} HanVoice.ca</p>
           </div>
         </div>
       </Container>
