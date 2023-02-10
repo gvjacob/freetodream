@@ -65,6 +65,19 @@ export default function MobileMenu({ onClose }) {
               {lt('navigation.life-in-canada')}
             </Link>
           </li>
+
+          <li>
+            <div className="hv-site-padding block w-full bg-blue-300 py-4">
+              <a
+                className="block w-full rounded-md bg-blue-dark py-3 text-center text-xl text-white"
+                href={lt('navigation.apply-form')}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {lt('home.apply')}
+              </a>
+            </div>
+          </li>
         </ul>
       </Dialog.Content>
     </Dialog.Portal>
