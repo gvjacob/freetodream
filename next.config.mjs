@@ -15,7 +15,7 @@ export default withMDX({
 
   i18n: {
     locales: ['en', 'ko'],
-    defaultLocale: 'en',
+    defaultLocale: 'ko',
   },
 
   webpack(config) {
