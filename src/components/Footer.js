@@ -71,7 +71,14 @@ export default function Footer() {
               {lt('footer.print')}
             </a>
 
-            <p className="lg:ml-auto">© {new Date().getFullYear()} HanVoice.ca</p>
+            <a
+              className="underline-offset-4 hocus:underline lg:ml-auto"
+              href="https://hanvoice.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              © {new Date().getFullYear()} HanVoice.ca
+            </a>
           </div>
         </div>
       </Container>
