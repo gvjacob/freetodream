@@ -20,7 +20,7 @@ export default function HomeTopper() {
             className={cn(
               'mb-4 mt-4 text-3xl text-white',
               'sm:mb-4 sm:text-4xl',
-              'lg:mb-8 lg:text-6xl',
+              'lg:mb-8 lg:text-6xl lg:leading-[1.1] xl:leading-tight',
             )}
           >
             {lt('home.headline')}
