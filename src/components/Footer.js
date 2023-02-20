@@ -77,7 +77,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              © {new Date().getFullYear()} HanVoice.ca
+              © HanVoice.ca {new Date().getFullYear()}
             </a>
           </div>
         </div>
