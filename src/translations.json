@@ -13,7 +13,7 @@
   },
   "navigation.home": {
     "en": "Home",
-    "ko": "집"
+    "ko": "한보이스"
   },
   "navigation.menu": {
     "en": "Menu",
@@ -89,7 +89,7 @@
   },
   "home.summary.process-description": {
     "en": "Once you register with HanVoice, we will securely send your family's information to field partners. If your family is identified and meets specific conditions, we will contact you to fill out the refugee application form.",
-    "ko": "HanVoice에 등록하면 가족 정보를 현장 파트너에게 안전하게 보낼 것입니다. 가족이 식별되고 특정 조건을 충족하는 경우, 난민 신청서를 작성하기 위해 연락 드리겠습니다."
+    "ko": "한보이스 에 등록하면 가족 정보를 현장 파트너에게 안전하게 보낼 것입니다. 가족이 식별되고 특정 조건을 충족하는 경우, 난민 신청서를 작성하기 위해 연락 드리겠습니다."
   },
   "home.as-seen-in": {
     "en": "As seen in",
@@ -121,7 +121,7 @@
   },
   "footer.program-credits": {
     "en": "Program by HanVoice in collaboration with the Government of Canada",
-    "ko": "캐나다 정부와 협력하여 HanVoice의 프로그램"
+    "ko": "캐나다 정부와 협력하여 한보이스 의 프로그램"
   },
   "footer.apply": {
     "en": "Submit an Application",
