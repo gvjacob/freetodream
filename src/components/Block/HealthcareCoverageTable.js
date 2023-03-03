@@ -7,11 +7,11 @@ export default function HealthcareCoverageTable() {
         <tr>
           <th>
             <Locale.en>Basic OHIP Coverage</Locale.en>
-            <Locale.ko>기본 온타리오 건강 보험 플랜(OHIP) 적용 범위</Locale.ko>
+            <Locale.ko>기본 온타리오 병원 치료 건강 보험 사업(OHIP) 적용 범위</Locale.ko>
           </th>
           <th>
             <Locale.en>IFHP Supplemental Coverage</Locale.en>
-            <Locale.ko>임시 연방 의료보험 프로그램(IFHP) 추가 보장 범위</Locale.ko>
+            <Locale.ko>림임시 련연방 병원 치료 사업 (IFHP) 추가 보장 범위</Locale.ko>
           </th>
         </tr>
       </thead>
@@ -19,7 +19,7 @@ export default function HealthcareCoverageTable() {
         <tr>
           <th scope="col">
             <Locale.en>Medical Services</Locale.en>
-            <Locale.ko>의료 서비스</Locale.ko>
+            <Locale.ko>의료 봉사</Locale.ko>
           </th>
           <th scope="col">
             <Locale.en>Limited Vision Care</Locale.en>
@@ -29,7 +29,7 @@ export default function HealthcareCoverageTable() {
         <tr>
           <td>
             <Locale.en>Doctor visits</Locale.en>
-            <Locale.ko>의사 방문</Locale.ko>
+            <Locale.ko>의사 왕진</Locale.ko>
           </td>
           <td>
             <Locale.en>1 pair of eyewear (glasses and/or lenses every 2 years)</Locale.en>
@@ -73,7 +73,7 @@ export default function HealthcareCoverageTable() {
         <tr>
           <th scope="col">
             <Locale.en>Hospital Services</Locale.en>
-            <Locale.ko>병원 서비스</Locale.ko>
+            <Locale.ko>병원 봉사</Locale.ko>
           </th>
           <td>
             <Locale.en>Extractions &amp; Dentures</Locale.en>

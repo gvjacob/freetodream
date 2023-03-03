@@ -66,7 +66,7 @@ body {
   }
 
   .hv-article-body {
-    @apply lg:leading-relaxed xl:text-xl xl:leading-relaxed;
+    @apply xl:text-lg xl:leading-relaxed;
   }
 
   /* Headings */
