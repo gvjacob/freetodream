@@ -41,11 +41,11 @@
   },
   "home.headline": {
     "en": "How your family can call Canada home",
-    "ko": "캐나다에 정착하는 방법"
+    "ko": "탈북 난민 다섯 가정을 캐나다에 초청합니다"
   },
   "home.introduction": {
     "en": "Our new program aims to resettle 5 North Korean refugee families by 2023",
-    "ko": "한보이스의 새로운 사업은 2023년까지 탈북민 다섯 가정을 정착시키는 것을 목표로 합니다."
+    "ko": "2021년 캐나다에 도입된 새로운 탈북 난민 정책으로, 캐나다는 전 세계에서 유일하게 일반 시민들의 후원금으로 탈북 난민의 정착지원이 시행되는 첫 국가가 되었습니다."
   },
   "home.apply": {
     "en": "Submit an Application",
@@ -73,15 +73,15 @@
   },
   "home.summary.about-description": {
     "en": "In partnership with the Canadian Government, we will resettle five North Korean families from Southeast Asia within two years. The pilot will focus on North Korean women and their families.",
-    "ko": "캐나다 정부와 협력하여 한보이스는 2년 안에 태국에 있는 탈북민 다섯 가정을 캐나다에 정착을 지원 합니다. 본 사업은 시범으로 시작하는 사업이고 2년 동안 진행 할 예정입니다. 이 기간 동안 성폭력의 위험에 처한 사람들에 특히 중점을 둔 북한 여성과 그 가족에 중점을 둘 것입니다."
+    "ko": "캐나다 정부 및 민간 후원자와 협력하여, 한보이스는 탈북 난민들이 새 삶을 캐나다에서 정착할 수 있도록 지원합니다. 캐나다의 민간 후원자는 태국까지 온 탈북 난민 다섯가정(탈북 여성과 그녀의 가족)의 캐나다 정착을 지원합니다. 본 사업은 시범으로 시작하여 2년 동안 진행합니다."
   },
   "home.summary.eligibility": {
     "en": "Eligibility",
-    "ko": "사업 대상자"
+    "ko": "대상자"
   },
   "home.summary.eligibility-description": {
     "en": "Foreign national must be a woman, who has been victim of sexual gender-based violence, a North Korean citizen, has not previously resided in South Korea, has never held a position in service of the North Korean government.",
-    "ko": "성폭력을 피해 받은 북한 여성이어야하며, 북한 사람임을 확인 할 수 있는 서류를 보유하고 있어야 하고 대한민국에 거주 한 경험이 없어야 됩니다."
+    "ko": "대한민국에 거주한 경험이 없는 북한 여성과 그녀의 가족 중 태국까지 올 수 있는 사람입니다."
   },
   "home.summary.process": {
     "en": "Process",
@@ -89,7 +89,7 @@
   },
   "home.summary.process-description": {
     "en": "Once you register with HanVoice, we will securely send your family's information to field partners. If your family is identified and meets specific conditions, we will contact you to fill out the refugee application form.",
-    "ko": "한보이스에 신청을 하면 가족 정보를 현장 협조자에게 안전하게 보낼 것입니다. 가족을 찾고 특정 조건을 충족하는 경우, 난민 신청서를 작성하기 위해 연락 드리겠습니다."
+    "ko": "대한민국에 있는 대상자의 가족이 한보이스에 대상자의 정보를 제출하면 태국 현지에서 대상자를 확인하고, 자격 요건을 충족할 경우, 난민신청서를 작성하기 위해 연락을 드립니다."
   },
   "home.as-seen-in": {
     "en": "As seen in",
@@ -116,12 +116,12 @@
     "ko": "인쇄"
   },
   "footer.headline": {
-    "en": "Secure your path towards a better future now.",
-    "ko": "이제 더 나은 미래를 향한 길을 확보하십시오."
+    "en": "Secure your path towards a better future now",
+    "ko": "더 나은 미래를 위한 길을 선택하십시오"
   },
   "footer.program-credits": {
     "en": "Program by HanVoice in partnership with the Government of Canada",
-    "ko": "캐나다 정부와 협력는 사업입니다"
+    "ko": "캐나다 정부와 협력하는 사업입니다"
   },
   "footer.apply": {
     "en": "Submit an Application",
