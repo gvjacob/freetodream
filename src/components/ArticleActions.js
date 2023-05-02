@@ -8,10 +8,6 @@ export default function ArticleActions({ className }) {
 
   return (
     <div className={className}>
-      <p className="mb-4 max-w-[200px] text-sm font-semibold text-gray-500 lg:max-w-[220px] lg:text-base">
-        {lt('article.actions-heading')}
-      </p>
-
       <div className="flex justify-between space-x-2">
         <a
           className="w-full rounded-md bg-blue py-3 text-center font-semibold text-white transition-colors hocus:bg-blue-900"
