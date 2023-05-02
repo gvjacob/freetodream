@@ -67,7 +67,7 @@ export default function HealthcareCoverageTable() {
           <td></td>
           <td>
             <Locale.en>Emergency dental exams &amp; x-rays</Locale.en>
-            <Locale.ko>치과 검진 및 엑스레이 (응급 상황 시)</Locale.ko>
+            <Locale.ko>치과 검진 및 엑스레이 (응급 상황시)</Locale.ko>
           </td>
         </tr>
         <tr>
