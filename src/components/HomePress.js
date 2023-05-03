@@ -10,7 +10,7 @@ import GlobeAndMailLogo from '@img/press/the-globe-and-mail.png';
 import TorontoStarLogo from '@img/press/toronto-star.png';
 import YonhapLogo from '@img/press/yonhap.png';
 
-function Logo({ src, alt, href, small }) {
+function Logo({ src, alt, href, small, medium }) {
   return (
     <li>
       <a
@@ -19,7 +19,11 @@ function Logo({ src, alt, href, small }) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image className={cn('w-3/5 grayscale', small && 'scale-75')} src={src} alt={alt} />
+        <Image
+          className={cn('w-3/5 grayscale', small && 'scale-75', medium && 'scale-90')}
+          src={src}
+          alt={alt}
+        />
       </a>
     </li>
   );
@@ -38,12 +42,14 @@ export default function HomePress() {
             src={APLogo}
             alt="Associated Press"
             href="https://apnews.com/article/canada-china-toronto-seoul-south-korea-bc7679693fc60196aebce2bbe3cda1c5"
+            medium
           />
 
           <Logo
             src={CBCLogo}
             alt="CBC News"
             href="https://www.cbc.ca/news/canada/toronto/new-pilot-program-allows-canadians-to-privately-sponsor-north-korean-refugees-1.6228200"
+            medium
           />
 
           <Logo
