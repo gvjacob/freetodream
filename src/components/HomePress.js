@@ -33,11 +33,11 @@ export default function HomePress() {
   const lt = useLocaleTranslation();
 
   return (
-    <section className="my-10" aria-label="As seen in">
+    <section className="mt-20 mb-10" aria-label="As seen in">
       <Container>
-        <h2 className="sr-only">{lt('home.as-seen-in')}</h2>
+        <h2 className="mb-8 text-center text-2xl font-bold">{lt('home.as-seen-in')}</h2>
 
-        <ul className="grid grid-cols-3 divide-x-[1px] divide-gray-200 border-x border-x-gray-200 lg:grid-cols-6">
+        <ul className="grid grid-cols-3 divide-x-[1px] divide-gray-300 border-x border-x-gray-300 lg:grid-cols-6">
           <Logo
             src={APLogo}
             alt="Associated Press"
