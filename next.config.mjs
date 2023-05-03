@@ -14,7 +14,7 @@ export default withMDX({
   pageExtensions: ['js', 'mdx'],
 
   i18n: {
-    locales: ['en', 'ko'],
+    locales: ['ko'],
     defaultLocale: 'ko',
   },
 

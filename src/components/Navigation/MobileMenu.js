@@ -6,7 +6,6 @@ import * as Dialog from '@radix-ui/react-dialog';
 
 import { useLocaleTranslation } from '@utils/i18n';
 import hanvoiceLogo from '@img/hanvoice-logo.png';
-import LocaleSwitch from './LocaleSwitch';
 
 export default function MobileMenu({ onClose }) {
   const lt = useLocaleTranslation();
@@ -27,9 +26,11 @@ export default function MobileMenu({ onClose }) {
           <div className="order-1 flex flex-1 justify-end">
             <Dialog.Close className="text-sm text-white">{lt('navigation.close')}</Dialog.Close>
           </div>
-          <div className="flex-1 shrink-0">
-            <LocaleSwitch />
-          </div>
+          {/* 
+            <div className="flex-1 shrink-0">
+              <LocaleSwitch />
+            </div>
+          */}
           <Link href="/">
             <Image className="w-8 max-sm:w-6" src={hanvoiceLogo} alt="" />
           </Link>

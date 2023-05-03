@@ -6,7 +6,6 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { useLocaleTranslation } from '@utils/i18n';
 import Container from '@components/Container';
 import hanvoiceLogo from '@img/hanvoice-logo.png';
-import LocaleSwitch from './LocaleSwitch';
 import MobileMenu from './MobileMenu';
 
 function NavigationLink({ href, children }) {
@@ -25,9 +24,11 @@ export default function Navigation() {
     <React.Fragment>
       <header className="absolute top-0 z-10 w-full print:hidden">
         <Container className="flex items-center gap-4 py-4 max-lg:justify-center">
-          <div className="flex-1 md:hidden">
-            <LocaleSwitch className="" />
-          </div>
+          {/* 
+            <div className="flex-1 md:hidden">
+              <LocaleSwitch className="" />
+            </div>
+          */}
 
           <Link href="/">
             <span className="sr-only">{lt('navigation.home')}</span>
@@ -35,7 +36,7 @@ export default function Navigation() {
           </Link>
 
           <nav className="flex w-full flex-1 flex-col items-end divide-y-[1px] divide-blue-100 max-md:hidden">
-            <LocaleSwitch className="pb-2 max-md:hidden" />
+            {/* <LocaleSwitch className="pb-2 max-md:hidden" /> */}
 
             <ul className="flex w-full justify-end space-x-10 pt-4 max-sm:hidden">
               <li>
