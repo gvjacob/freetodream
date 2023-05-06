@@ -58,6 +58,9 @@ export default function Footer() {
           <div className="flex-1 max-sm:gap-10 sm:gap-2 lg:order-1">
             <SVG.CanadaWordmark className="w-32" aria-hidden />
             <p className="mt-4 max-w-xs">{lt('footer.program-credits')}</p>
+            <a className="mt-1 block underline" href="mailto:refugee@hanvoice.ca">
+              {lt('footer.contact')}
+            </a>
           </div>
 
           <div className="flex flex-1 flex-col gap-1 max-lg:mt-8 lg:order-3 lg:justify-end">

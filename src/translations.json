@@ -142,5 +142,9 @@
   "footer.program-pdf": {
     "en": "/HanVoice_Resettlement Program_2023_ENGLISH.pdf",
     "ko": "/HanVoice_Resettlement Program_2023_KOREAN.pdf"
+  },
+  "footer.contact": {
+    "en": "Contact",
+    "ko": "연락처"
   }
 }
