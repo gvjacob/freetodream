@@ -53,6 +53,12 @@ export default function Footer() {
                 {lt('navigation.life-in-canada')}
               </Link>
             </li>
+
+            <li>
+              <Link className="underline-offset-4 hocus:underline" href="/faqs">
+                {lt('navigation.faqs')}
+              </Link>
+            </li>
           </ul>
 
           <div className="flex-1 max-sm:gap-10 sm:gap-2 lg:order-1">

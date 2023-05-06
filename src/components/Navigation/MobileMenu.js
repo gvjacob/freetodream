@@ -68,7 +68,17 @@ export default function MobileMenu({ onClose }) {
           </li>
 
           <li>
-            <div className="hv-site-padding block w-full bg-blue-300 py-4">
+            <Link
+              className="hv-site-padding block bg-blue-200 py-8 text-4xl text-white"
+              href="/faqs"
+              onClick={onClose}
+            >
+              {lt('navigation.faqs')}
+            </Link>
+          </li>
+
+          <li>
+            <div className="hv-site-padding block w-full bg-blue-200 py-4">
               <a
                 className="block w-full rounded-md bg-blue-dark py-3 text-center text-xl text-white"
                 href={lt('navigation.apply-form')}

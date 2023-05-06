@@ -35,6 +35,10 @@
     "en": "Life in Canada",
     "ko": "캐나다 생활"
   },
+  "navigation.faqs": {
+    "en": "FAQs",
+    "ko": "자주 묻는 질문"
+  },
   "navigation.locale-switch": {
     "en": "한국어",
     "ko": "English"

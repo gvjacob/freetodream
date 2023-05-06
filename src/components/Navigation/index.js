@@ -54,6 +54,10 @@ export default function Navigation() {
               </li>
 
               <li>
+                <NavigationLink href="/faqs">{lt('navigation.faqs')}</NavigationLink>
+              </li>
+
+              <li>
                 <a
                   className="rounded bg-white px-3 py-2 text-sm text-black transition-colors hocus:bg-blue-dark hocus:text-white"
                   href={lt('navigation.apply-form')}
