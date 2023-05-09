@@ -7,21 +7,29 @@ import { useLocaleTranslation } from '@utils/i18n';
 import Container from '@components/Container';
 
 export default function MediaFeature({
+  className,
   title,
   description,
   primaryLink,
   secondaryLink,
   image,
   video,
+  theme = 'dark',
 }) {
   const lt = useLocaleTranslation();
 
   return (
-    <Container className="relative flex flex-col-reverse pt-32 pb-8 sm:pt-40 md:flex-row md:items-end md:justify-between md:space-x-10 lg:pt-48">
+    <Container
+      className={cn(
+        'relative flex flex-col-reverse md:flex-row md:items-center md:justify-between md:space-x-10',
+        theme === 'dark' && 'text-white',
+        className,
+      )}
+    >
       <div>
         <h1
           className={cn(
-            'mb-4 mt-4 text-3xl text-white',
+            'mb-4 mt-4 text-3xl',
             'sm:mb-4 sm:text-4xl',
             'lg:mb-8 lg:text-6xl lg:leading-[1.1] xl:leading-tight',
           )}
@@ -29,7 +37,7 @@ export default function MediaFeature({
           {title}
         </h1>
 
-        <p className="max-w-sm text-lg text-white">{description}</p>
+        <p className="max-w-sm text-lg">{description}</p>
 
         <div className="mt-8 flex items-center gap-4">
           {primaryLink && (

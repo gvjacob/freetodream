@@ -10,6 +10,7 @@ export default function HomeTopper() {
       <div className="absolute inset-0 -z-10 h-[110%] bg-blue" />
 
       <MediaFeature
+        className="pt-32 pb-8 sm:pt-40 lg:pt-48"
         title={lt('home.headline')}
         description={lt('home.introduction')}
         primaryLink={{
