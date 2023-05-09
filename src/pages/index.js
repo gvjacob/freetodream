@@ -12,7 +12,6 @@ export default function Home() {
       <Meta title={`${lt('navigation.home')} — Free to Dream`} />
       <HomeTopper />
       <HomeProgramSummary />
-      <HomePress />
     </>
   );
 }
