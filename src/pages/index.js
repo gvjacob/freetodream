@@ -16,7 +16,7 @@ export default function Home() {
       <HomeProgramSummary />
       <MediaFeature
         className="py-12"
-        title="코로나19가 잦아들면 캐나다도 북한 난민들이 평생 정착할 수 있는 터전이 되길 기대합니다."
+        title="세계 최초로 민간 차원에서 북한 난민 정착 경로 확보"
         description="한보이스는 캐나다 정부와 북한 난민만을 위한 별도의 협약을 맺어 2021년 마침내 캐나다도 공식적으로 북한 난민을 수용하게 되었습니다."
         primaryLink={{
           label: '중앙일보 기사 읽기',
