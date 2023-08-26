@@ -89,6 +89,18 @@ export default function MobileMenu({ onClose }) {
               </a>
             </div>
           </li>
+          <li>
+            <div className="hv-site-padding block w-full bg-blue-200 pb-4">
+              <a
+                className="block w-full rounded-md bg-blue-dark py-3 text-center text-xl text-white"
+                href="http://pf.kakao.com/_DxfZYxj/chat"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {lt('navigation.kakao-link')}
+              </a>
+            </div>
+          </li>
         </ul>
       </Dialog.Content>
     </Dialog.Portal>
