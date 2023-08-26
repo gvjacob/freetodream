@@ -7,6 +7,10 @@
     "en": "https://survey.typeform.com/to/IP3vuSkA",
     "ko": "https://survey.typeform.com/to/dY9b2b3t"
   },
+  "navigation.kakao-link": {
+    "en": "Kakao",
+    "ko": "카톡상담"
+  },
   "navigation.apply": {
     "en": "Apply",
     "ko": "신청하기"
