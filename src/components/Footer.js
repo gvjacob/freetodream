@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Script from 'next/script';
 
 import SVG from '@components/SVG';
 import Container from '@components/Container';
@@ -25,14 +26,8 @@ export default function Footer() {
               {lt('footer.apply')}
             </a>
 
-            <a
-              className="underline underline-offset-4 hocus:no-underline max-lg:text-sm"
-              href={lt('footer.newsletter')}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {lt('footer.newsletter-sign-up')}
-            </a>
+            <div data-tf-live="01H8QM0Q8G3158ER5MBA42TCQ3"></div>
+            <Script src="//embed.typeform.com/next/embed.js" />
           </div>
         </div>
 
