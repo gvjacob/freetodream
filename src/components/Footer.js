@@ -17,17 +17,17 @@ export default function Footer() {
           </h2>
 
           <div className="flex flex-wrap items-center justify-center gap-6">
+            <div data-tf-live="01H8QM0Q8G3158ER5MBA42TCQ3"></div>
+            <Script src="//embed.typeform.com/next/embed.js" />
+
             <a
-              className="rounded-md bg-blue-dark p-4 transition-colors hocus:bg-white hocus:text-black max-lg:text-sm"
-              href={lt('navigation.apply-form')}
+              className="transition-colors hocus:text-black max-lg:text-sm"
+              href="http://pf.kakao.com/_DxfZYxj/chat"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {lt('footer.apply')}
+              {lt('navigation.kakao-link')}
             </a>
-
-            <div data-tf-live="01H8QM0Q8G3158ER5MBA42TCQ3"></div>
-            <Script src="//embed.typeform.com/next/embed.js" />
           </div>
         </div>
 
