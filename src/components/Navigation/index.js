@@ -1,4 +1,5 @@
 import React from 'react';
+import Script from 'next/script';
 import Link from 'next/link';
 import Image from 'next/image';
 import * as Dialog from '@radix-ui/react-dialog';
@@ -38,7 +39,7 @@ export default function Navigation() {
           <nav className="flex w-full flex-1 flex-col items-end max-md:hidden">
             {/* <LocaleSwitch className="pb-2 max-md:hidden" /> */}
 
-            <ul className="flex w-full justify-end pt-4 max-sm:hidden">
+            <ul className="flex w-full items-center justify-end pt-4 max-sm:hidden">
               <li className="mx-5">
                 <NavigationLink href="/about">{lt('navigation.about-hanvoice')}</NavigationLink>
               </li>
@@ -59,23 +60,18 @@ export default function Navigation() {
 
               <li className="mx-5">
                 <a
-                  className="rounded bg-white px-3 py-2 text-sm text-black transition-colors hocus:bg-blue-dark hocus:text-white"
-                  href={lt('navigation.apply-form')}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {lt('navigation.apply')}
-                </a>
-              </li>
-              <li>
-                <a
-                  className="rounded bg-white px-3 py-2 text-sm text-black transition-colors hocus:bg-blue-dark hocus:text-white"
+                  className="text-white underline-offset-4 hocus:underline"
                   href="http://pf.kakao.com/_DxfZYxj/chat"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {lt('navigation.kakao-link')}
                 </a>
+              </li>
+
+              <li className="mx-5">
+                <div data-tf-live="01H8QM0Q8G3158ER5MBA42TCQ3"></div>
+                <Script src="//embed.typeform.com/next/embed.js" />
               </li>
             </ul>
           </nav>
