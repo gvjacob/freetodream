@@ -75,6 +75,8 @@ export default function Navigation() {
           </nav>
 
           <div className="flex flex-1 justify-end md:hidden">
+            <div className="mr-4" data-tf-live="01H8QM0Q8G3158ER5MBA42TCQ3" />
+
             <Dialog.Root open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <Dialog.Trigger className="text-sm text-white">
                 {lt('navigation.menu')}
