@@ -16,22 +16,15 @@ export default function Footer() {
           </h2>
 
           <div className="flex flex-wrap items-center justify-center gap-6">
-            <a
-              className="rounded-md bg-blue-dark p-4 transition-colors hocus:bg-white hocus:text-black max-lg:text-sm"
-              href={lt('navigation.apply-form')}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {lt('footer.apply')}
-            </a>
+            <div data-tf-live="01H8QM0Q8G3158ER5MBA42TCQ3"></div>
 
             <a
-              className="underline underline-offset-4 hocus:no-underline max-lg:text-sm"
-              href={lt('footer.newsletter')}
+              className="transition-colors hocus:text-black max-lg:text-sm"
+              href="http://pf.kakao.com/_DxfZYxj/chat"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {lt('footer.newsletter-sign-up')}
+              {lt('navigation.kakao-link')}
             </a>
           </div>
         </div>

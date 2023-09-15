@@ -35,42 +35,48 @@ export default function Navigation() {
             <Image className="w-8 max-sm:w-6 lg:w-10" src={hanvoiceLogo} alt="" />
           </Link>
 
-          <nav className="flex w-full flex-1 flex-col items-end divide-y-[1px] divide-blue-100 max-md:hidden">
+          <nav className="flex w-full flex-1 flex-col items-end max-md:hidden">
             {/* <LocaleSwitch className="pb-2 max-md:hidden" /> */}
 
-            <ul className="flex w-full justify-end space-x-10 pt-4 max-sm:hidden">
-              <li>
+            <ul className="flex w-full items-center justify-end pt-4 max-sm:hidden">
+              <li className="mx-5">
                 <NavigationLink href="/about">{lt('navigation.about-hanvoice')}</NavigationLink>
               </li>
 
-              <li>
+              <li className="mx-5">
                 <NavigationLink href="/process">{lt('navigation.process')}</NavigationLink>
               </li>
 
-              <li>
+              <li className="mx-5">
                 <NavigationLink href="/life-in-canada">
                   {lt('navigation.life-in-canada')}
                 </NavigationLink>
               </li>
 
-              <li>
+              <li className="mx-5">
                 <NavigationLink href="/faqs">{lt('navigation.faqs')}</NavigationLink>
               </li>
 
-              <li>
+              <li className="mx-5">
                 <a
-                  className="rounded bg-white px-3 py-2 text-sm text-black transition-colors hocus:bg-blue-dark hocus:text-white"
-                  href={lt('navigation.apply-form')}
+                  className="text-white underline-offset-4 hocus:underline"
+                  href="http://pf.kakao.com/_DxfZYxj/chat"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {lt('navigation.apply')}
+                  {lt('navigation.kakao-link')}
                 </a>
+              </li>
+
+              <li className="mx-5">
+                <div data-tf-live="01H8QM0Q8G3158ER5MBA42TCQ3"></div>
               </li>
             </ul>
           </nav>
 
           <div className="flex flex-1 justify-end md:hidden">
+            <div className="mr-4" data-tf-live="01H8QM0Q8G3158ER5MBA42TCQ3" />
+
             <Dialog.Root open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <Dialog.Trigger className="text-sm text-white">
                 {lt('navigation.menu')}
