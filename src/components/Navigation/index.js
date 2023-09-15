@@ -1,5 +1,4 @@
 import React from 'react';
-import Script from 'next/script';
 import Link from 'next/link';
 import Image from 'next/image';
 import * as Dialog from '@radix-ui/react-dialog';
@@ -71,7 +70,6 @@ export default function Navigation() {
 
               <li className="mx-5">
                 <div data-tf-live="01H8QM0Q8G3158ER5MBA42TCQ3"></div>
-                <Script src="//embed.typeform.com/next/embed.js" />
               </li>
             </ul>
           </nav>

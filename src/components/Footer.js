@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Script from 'next/script';
 
 import SVG from '@components/SVG';
 import Container from '@components/Container';
@@ -18,7 +17,6 @@ export default function Footer() {
 
           <div className="flex flex-wrap items-center justify-center gap-6">
             <div data-tf-live="01H8QM0Q8G3158ER5MBA42TCQ3"></div>
-            <Script src="//embed.typeform.com/next/embed.js" />
 
             <a
               className="transition-colors hocus:text-black max-lg:text-sm"

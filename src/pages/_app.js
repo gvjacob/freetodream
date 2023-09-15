@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Head from 'next/head';
+import Script from 'next/script';
 
 import Layout from '@components/Layout';
 import '@src/styles/globals.css';
@@ -29,6 +30,7 @@ export default function App({ Component, pageProps }) {
         </noscript>
       </Head>
       <Component {...pageProps} />
+      <Script src="//embed.typeform.com/next/embed.js" />
     </Layout>
   );
 }
